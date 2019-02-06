@@ -7,8 +7,7 @@ To stir interest/educate high school students to think beyond college and career
 
 
 ## Project Proposal
-create an intteractive informational website (modules) To help stir interest/educate high school students to think beyond college <br />
-and career, and think of purchasing a home.
+create an intteractive informational website (modules) To help stir interest/educate high school students to think beyond college and career, and think of purchasing a home.
 
 
 ## Project Plan
