@@ -28,10 +28,10 @@ export default {
   display: table;
   width: 80%;
   height: 200%;
-  border: 5px solid rgb(120, 132, 240);
+  border: 5px solid rgb(161, 170, 247);;
   margin: 2rem auto 0;
   border-radius: 1rem;
   text-align: center;
-  background: rgb(142, 140, 253);
+  background: rgb(195, 194, 255);
 }
 </style>
