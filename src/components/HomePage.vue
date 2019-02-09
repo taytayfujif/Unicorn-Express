@@ -1,7 +1,7 @@
 <template>
   <div class="page">
     <div id="Home-Filler">
-      <h1>Finances</h1>
+      <h1>{{slimJim}}</h1>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
 
   data() {
     return {
-
+      slimJim: "Header"
     }
   }
 
