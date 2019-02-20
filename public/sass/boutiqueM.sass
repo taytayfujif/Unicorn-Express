@@ -1,0 +1,102 @@
+/* Variables */
+
+$full-width: 100% //variable for full width
+$full-height: 100% //variable for full height
+
+$header-height: 30% //varable for height of header
+$header-font-size: 1.2rem //font size for header
+$header-borders: 3px solid black //border bottoms for header
+
+$header-img-height: 80%
+
+$background: #ffffff url('../images/background.jpg') repeat 
+$background-dimension: 360px 360px
+
+$cute-pink: #fbd6fb
+
+$box-corners: 1rem
+
+/* Essential Components for every Page */
+
+@font-face
+    font-family: 'woomy'
+    src: url('../fonts/Paintball_Beta.otf')
+
+body,html,#Root
+    width: $full-width
+    height: $full-height
+    margin: 0
+    font-family: woomy
+
+body
+    background: $background
+    background-size: $background-dimension
+//Header Stuff
+
+.Header //header in general
+    display: flex
+    height: $header-height
+    justify-content: center
+    padding: 4% 0
+
+//header for both left & Right Content
+.Header-Content-Left, .Header-Content-Right
+    display: flex
+    width:33.3%
+    padding: 0
+    list-style-type: none
+    margin: auto auto 0
+
+    a
+        text-decoration: none
+        color: black
+
+//only things on the left
+.Header-Content-Left
+    li
+        &:nth-child(1)
+            margin: 0 auto 0 0
+        
+        padding: 0 2rem 0.25rem 0
+
+
+//only things on the right
+.Header-Content-Right
+    li 
+        &:nth-child(2)
+            margin: 0 0 0 auto
+
+        padding: 0 0rem 0.25rem 2rem
+
+//All things in header(Left & Right)
+.Header-Actual-Content
+    margin: auto 1rem
+    font-size: $header-font-size
+    border-bottom: $header-borders
+
+//Things for the logo
+
+.Header-Logo
+    display: inline-flex
+    flex-direction: column
+    justify-content: center
+
+    img
+        height: $header-img-height
+        margin: auto auto 0 auto
+
+    p 
+        margin: 0
+        font-size: 2rem
+        text-align: center
+
+
+//Header End
+
+/* Footer Will Be added Later */
+
+.Footer
+    padding: 2rem
+    text-align: center
+    margin: 0.5rem 0 0 0
+    background: dimgrey

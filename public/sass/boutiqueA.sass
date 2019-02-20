@@ -1,0 +1,49 @@
+@import boutiqueM
+
+.Article-Box
+    width: 95%
+    margin: 1rem auto
+    background: $cute-pink
+    overflow: hidden
+    border-radius: $box-corners
+
+.Main-Content
+    width: 85%
+    margin: 0 auto
+
+    .Paragraph 
+        font-size: 1.2rem
+    
+    .Main-Header
+        float: right
+        font-size: 3rem
+        border-bottom: 3px solid black
+        padding-bottom: 0.75rem
+
+        &:nth-child(even)
+            float: left
+
+.Article-Image
+    width: 600px
+
+    // :nth-child(1)
+    //     float: left
+    //     padding-right: 25px
+    //     padding-bottom: 10px
+
+    // :nth-child(2)
+    //     float: right
+    //     padding-left: 25px
+    //     padding-bottom: 10px
+    img 
+         width: 100%
+
+.Left
+    float: left
+    padding-right: 25px
+    padding-bottom: 10px
+
+.Right
+    float: right
+    padding-left: 25px
+    padding-bottom: 10px

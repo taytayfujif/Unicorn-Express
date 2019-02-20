@@ -1,0 +1,113 @@
+/* Variables */
+/* Essential Components for every Page */
+@font-face {
+  font-family: "woomy";
+  src: url("../fonts/Paintball_Beta.otf");
+}
+body, html, #Root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: woomy;
+}
+
+body {
+  background: #ffffff url("../images/background.jpg") repeat;
+  background-size: 360px 360px;
+}
+
+.Header {
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  padding: 4% 0;
+}
+
+.Header-Content-Left, .Header-Content-Right {
+  display: flex;
+  width: 33.3%;
+  padding: 0;
+  list-style-type: none;
+  margin: auto auto 0;
+}
+
+.Header-Content-Left li {
+  padding: 0 1.5rem 0.25rem 0;
+}
+.Header-Content-Left li:nth-child(1) {
+  margin: 0 auto 0 0;
+}
+
+.Header-Content-Right li {
+  padding: 0 0rem 0.25rem 1.5rem;
+}
+.Header-Content-Right li:nth-child(2) {
+  margin: 0 0 0 auto;
+}
+
+.Header-Actual-Content {
+  margin: auto 1rem;
+  font-size: 1.2rem;
+  border-bottom: 3px solid black;
+}
+
+.Header-Logo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Header-Logo img {
+  height: 80%;
+  margin: auto auto 0 auto;
+}
+.Header-Logo p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Footer Will Be added Later */
+.Article-Box {
+  width: 95%;
+  margin: 1rem auto;
+  background: #fbd6fb;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.Main-Content {
+  width: 85%;
+  margin: 0 auto;
+}
+.Main-Content .Paragraph {
+  font-size: 1.2rem;
+}
+.Main-Content .Main-Header {
+  float: right;
+  font-size: 3rem;
+  border-bottom: 3px solid black;
+  padding-bottom: 0.75rem;
+}
+.Main-Content .Main-Header:nth-child(even) {
+  float: left;
+}
+
+.Article-Image {
+  width: 600px;
+}
+.Article-Image img {
+  width: 100%;
+}
+
+.Left {
+  float: left;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.Right {
+  float: right;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=boutiqueA.css.map */
