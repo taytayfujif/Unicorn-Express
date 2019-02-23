@@ -5,16 +5,21 @@ $full-height: 100% //variable for full height
 
 $header-height: 30% //varable for height of header
 $header-font-size: 1.2rem //font size for header
-$header-borders: 3px solid black //border bottoms for header
+$header-borders: 3px solid #97ffa4 //border bottoms for header
 
 $header-img-height: 80%
 
 $background: #ffffff url('../images/background.jpg') repeat 
 $background-dimension: 360px 360px
 
+$background-Signup: #ffffff url('../images/login.jpg') repeat
+$background-dimension: 360px 360px
+
 $cute-pink: #fbd6fb
 
 $box-corners: 1rem
+
+$overlay-layer: 1
 
 /* Essential Components for every Page */
 
@@ -31,6 +36,7 @@ body,html,#Root
 body
     background: $background
     background-size: $background-dimension
+
 //Header Stuff
 
 .Header //header in general
@@ -38,6 +44,7 @@ body
     height: $header-height
     justify-content: center
     padding: 4% 0
+    position: relative
 
 //header for both left & Right Content
 .Header-Content-Left, .Header-Content-Right
@@ -49,7 +56,7 @@ body
 
     a
         text-decoration: none
-        color: black
+        color: rgb(138, 130, 247)
 
 //only things on the left
 .Header-Content-Left
@@ -89,8 +96,129 @@ body
         margin: 0
         font-size: 2rem
         text-align: center
+        color: rgb(138, 130, 247)
+
+/* stuff for Signup */
+#Exit-Button
+    width: 30%
+    margin: 0.5rem auto
+    height: 3rem
+    background: none
+    border: 3px solid black
+    border-radius: 0.5rem
+    font-size: 1.5rem
+    background: #F44336
+    color: wheat
+
+    &:hover
+        cursor: pointer
+
+.Auth-Text
+    position: absolute
+    display: inline-flex
+    color: #6e63ff
+    right: 5%
+    top: 10%
+    font-size: 1.352rem
+
+#Sign-In,#Sign-Up,#Log-Out
+    
+    transition: all 0.25s linear
+
+    &:hover
+        cursor: pointer
+        color: tomato
 
 
+#Signup-Overlay //Container that holds Signup
+    display: none
+    width: $full-width
+    height: $full-height
+    position: fixed
+    z-index: $overlay-layer
+    top: 0%
+    background: rgba(0,0,0,0.75)
+    justify-content: center
+
+.Signup-Block
+    display: flex
+    flex-direction: column
+    width: 75%
+    height: 75%
+    background: white
+    border: 3px solid black
+    background: $background-Signup
+    background-size: $background-dimension
+    margin: auto
+    overflow: hidden
+    border-radius: $box-corners
+
+    #Signup-Stuff, #Signin-Stuff
+        width: 50%
+        height: $full-height
+    
+    #Signin-Stuff
+        border-right: 2px dashed black
+
+    .Slogan
+        display: block
+        justify-content: space-evenly
+        background: #F44336
+
+        p 
+            width: 50%
+            display: inline-block
+            text-align: center
+            font-size: 1.5rem
+            color: #3c3c3c
+            margin: 0
+            padding: 0.75rem 0
+
+            &:nth-child(2)
+                float: right
+
+    #Auth-Box
+        display: flex
+        height: -webkit-fill-available
+
+    .Auth-Content
+        display: flex
+        flex-direction: column
+        width: 80%
+        margin: 1rem auto
+        justify-content: space-around
+        height: 70%
+
+        button
+            width: 40%
+            margin: 0 auto
+            height: 3rem
+            background: none
+            border: 3px solid black
+            border-radius: 0.5rem
+            font-size: 1.5rem
+            background: #F44336
+            color: wheat
+    
+    .Auth-Spread
+        display: flex
+        flex-direction: column
+
+        input
+            background: #FFEB3B
+            border: 2px solid black
+            border-radius: 0.5rem
+            height: 2.5rem
+            padding: 0.25rem
+            font-size: 2rem
+            color: #9C27B0
+
+        p 
+            display: inline-flex
+            color: #6e63ff
+            font-size: 1.23rem
+            margin: 0 0 0.25rem
+    
 //Header End
 
 /* Footer Will Be added Later */

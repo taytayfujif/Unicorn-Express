@@ -1,5 +1,9 @@
 @import boutiqueM
 
+$text-color: #484848
+$header-color: #6161fd
+$border-color: #94ffa6
+
 .Article-Box
     width: 95%
     margin: 1rem auto
@@ -13,12 +17,14 @@
 
     .Paragraph 
         font-size: 1.2rem
+        color: $text-color
     
     .Main-Header
         float: right
         font-size: 3rem
-        border-bottom: 3px solid black
+        border-bottom: 3px solid $border-color
         padding-bottom: 0.75rem
+        color: $header-color
 
         &:nth-child(even)
             float: left
