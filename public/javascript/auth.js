@@ -10,12 +10,7 @@ auth.onAuthStateChanged(user => { //callback function ~ fires at every sign in /
     
     if(user) {
         console.log('User Logged In ',user);
-
-        //reference and retrieving sata
-        dataBase.collection('user').get().then(data => {
-        UISetup(data);
-        }); //.get() gets the docs inside the collection || async
-
+        UISetup(user); //passes in the document & User Creditals
     } else {
         console.log('User is logged out');
     }
@@ -41,8 +36,11 @@ signupForm.addEventListener('submit', (e) => {
     //this method below needs to be async with .then method
     //firebase method to sign up user and register to database || using auth const in index.html
     auth.createUserWithEmailAndPassword(email,password).then(credit => { //gives user a creditenial token
-        //console.log(credit);
-        modal.style.display = 'none';
+        return dataBase.collection('users').doc(credit.user.uid).set({
+            score: 0
+        }); //fire store automatically creates 'users' collection and document
+    }).then(() => {
+        modal.style.display = 'none'; //this will fire when user database is created 
     }); //method to take parameters in and store in firebase
     //check backend or firebase to see the magic happen
 });

@@ -99,10 +99,10 @@ body {
   font-size: 1.352rem;
 }
 
-#Sign-In, #Sign-Up, #Log-Out {
+#Sign-In, #Sign-Up, #Log-Out, #Creditials {
   transition: all 0.25s linear;
 }
-#Sign-In:hover, #Sign-Up:hover, #Log-Out:hover {
+#Sign-In:hover, #Sign-Up:hover, #Log-Out:hover, #Creditials:hover {
   cursor: pointer;
   color: tomato;
 }
