@@ -1,21 +1,34 @@
+var modal = document.querySelector('#Signup-Overlay');
+
+const signupForm = document.querySelector("#Signup-Stuff"); //sign up element
+
+const signinForm = document.querySelector("#Signin-Stuff"); //log in element
+
 //listen for authentication status changes
 auth.onAuthStateChanged(user => { //callback function ~ fires at every sign in / sign up / log out
     //user parameter is null if user logged out otherwises returns something
     
     if(user) {
-        console.log('User Logged In ',user)
+        console.log('User Logged In ',user);
+
+        //reference and retrieving sata
+        dataBase.collection('user').get().then(data => {
+        UISetup(data);
+        }); //.get() gets the docs inside the collection || async
+
     } else {
-        console.log('User is logged out')
+        console.log('User is logged out');
     }
 });
 
-var modal = document.querySelector('#Login-Overlay');
-
-const signupForm = document.querySelector("#Signup-Stuff"); //sign up element
-
-const logOut = document.querySelector("#Log-Out"); //logging out element
-
-const signinForm = document.querySelector("#Signin-Stuff"); //log in element
+//signs out the current user
+//signout still a async
+function Why () {
+    auth.signOut().then(() => {
+        console.log('clicked');
+        location.reload();
+    });
+}
 
 //signing users up
 signupForm.addEventListener('submit', (e) => {
@@ -33,13 +46,6 @@ signupForm.addEventListener('submit', (e) => {
     }); //method to take parameters in and store in firebase
     //check backend or firebase to see the magic happen
 });
-
-//signs out the current user
-//signout still a async
-logOut.addEventListener('click', e => {
-    e.preventDefault();
-    auth.signOut();
-})
 
 //logs in a user
 //as always the method is async

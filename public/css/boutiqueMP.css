@@ -89,7 +89,9 @@ body {
 }
 
 .Auth-Text {
+  display: none;
   position: absolute;
+  z-index: 0;
   display: inline-flex;
   color: #6e63ff;
   right: 5%;
