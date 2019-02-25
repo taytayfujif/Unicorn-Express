@@ -1,0 +1,47 @@
+@import boutiqueM
+
+.Main-Page-Content
+    display: flex
+    flex-direction: column
+    height: 300%
+    width: 95%
+    margin: 0 auto
+    border-radius: $box-corners
+    overflow: hidden
+    background: $cute-pink
+
+//Main page image
+#Big-Image 
+    width: $full-width
+    height: 30%
+    background-image: url('../images/Unicorn-Express.svg')
+    background-position: center
+    background-size: cover
+    
+//div that holds all the content
+#Reroute-Content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.Content 
+    display: flex
+    border: 1px solid black
+    width: 75%
+    margin: 1rem auto
+
+.Content-Text
+    width: -webkit-fill-available
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    
+    p,h1
+        text-align: center
+        margin: 0 auto
+    h1 
+        padding: 0 0 0.25rem
+        border-bottom: 1px solid #94ffa6
+        color: #6161fd
+
+//sass --watch ./sass:./css

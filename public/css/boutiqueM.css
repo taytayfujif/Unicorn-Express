@@ -1,0 +1,209 @@
+/* Variables */
+/* Essential Components for every Page */
+@font-face {
+  font-family: "woomy";
+  src: url("../fonts/Paintball_Beta.otf");
+}
+body, html, #Root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: woomy;
+}
+
+body {
+  background: #ffffff url("../images/background.jpg") repeat;
+  background-size: 360px 360px;
+}
+
+.Header {
+  display: flex;
+  height: 30%;
+  justify-content: center;
+  padding: 4% 0;
+  position: relative;
+}
+
+.Header-Content-Left, .Header-Content-Right {
+  display: flex;
+  width: 33.3%;
+  padding: 0;
+  list-style-type: none;
+  margin: auto auto 0;
+}
+.Header-Content-Left a, .Header-Content-Right a {
+  text-decoration: none;
+  color: #8a82f7;
+}
+
+.Header-Content-Left li {
+  padding: 0 2rem 0.25rem 0;
+}
+.Header-Content-Left li:nth-child(1) {
+  margin: 0 auto 0 0;
+}
+
+.Header-Content-Right li {
+  padding: 0 0rem 0.25rem 2rem;
+}
+.Header-Content-Right li:nth-child(2) {
+  margin: 0 0 0 auto;
+}
+
+.Header-Actual-Content {
+  margin: auto 1rem;
+  font-size: 1.2rem;
+  border-bottom: 3px solid #97ffa4;
+}
+
+.Header-Logo {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Header-Logo img {
+  height: 80%;
+  margin: auto auto 0 auto;
+}
+.Header-Logo p {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  color: #8a82f7;
+}
+
+/* stuff for Signup */
+#Exit-Button {
+  width: 30%;
+  margin: 0.5rem auto;
+  height: 3rem;
+  background: none;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background: #F44336;
+  color: wheat;
+}
+#Exit-Button:hover {
+  cursor: pointer;
+}
+
+.Auth-Text {
+  display: none;
+  position: absolute;
+  z-index: 0;
+  display: inline-flex;
+  color: #6e63ff;
+  right: 5%;
+  top: 10%;
+  font-size: 1.352rem;
+}
+
+#Sign-In, #Sign-Up, #Log-Out, #Creditials {
+  transition: all 0.25s linear;
+}
+#Sign-In:hover, #Sign-Up:hover, #Log-Out:hover, #Creditials:hover {
+  cursor: pointer;
+  color: tomato;
+}
+
+#Signup-Overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0%;
+  background: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+}
+
+.Signup-Block {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 75%;
+  background: white;
+  border: 3px solid black;
+  background: #ffffff url("../images/login.jpg") repeat;
+  background-size: 360px 360px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.Signup-Block #Signup-Stuff, .Signup-Block #Signin-Stuff {
+  width: 50%;
+  height: 100%;
+}
+.Signup-Block #Signin-Stuff {
+  border-right: 2px dashed black;
+}
+.Signup-Block .Slogan {
+  display: block;
+  justify-content: space-evenly;
+  background: #F44336;
+}
+.Signup-Block .Slogan p {
+  width: 50%;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #3c3c3c;
+  margin: 0;
+  padding: 0.75rem 0;
+}
+.Signup-Block .Slogan p:nth-child(2) {
+  float: right;
+}
+.Signup-Block #Auth-Box {
+  display: flex;
+  height: -webkit-fill-available;
+}
+.Signup-Block .Auth-Content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 1rem auto;
+  justify-content: space-around;
+  height: 70%;
+}
+.Signup-Block .Auth-Content button {
+  width: 40%;
+  margin: 0 auto;
+  height: 3rem;
+  background: none;
+  border: 3px solid black;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  background: #F44336;
+  color: wheat;
+}
+.Signup-Block .Auth-Spread {
+  display: flex;
+  flex-direction: column;
+}
+.Signup-Block .Auth-Spread input {
+  background: #FFEB3B;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+  font-size: 2rem;
+  color: #9C27B0;
+}
+.Signup-Block .Auth-Spread p {
+  display: inline-flex;
+  color: #6e63ff;
+  font-size: 1.23rem;
+  margin: 0 0 0.25rem;
+}
+
+/* Footer Will Be added Later */
+.Footer {
+  padding: 2rem;
+  text-align: center;
+  margin: 0.5rem 0 0 0;
+  background: dimgrey;
+}
+
+/*# sourceMappingURL=boutiqueM.css.map */

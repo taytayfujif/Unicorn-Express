@@ -1,0 +1,6 @@
+//reference and retrieving sata
+dataBase.collection('user').onSnapshot(data => { //.get().then() was replaced with because of realtime listening .onSnapshot 
+
+}, err => {
+    console.log(err.message);
+}); //.get() gets the docs inside the collection || async
