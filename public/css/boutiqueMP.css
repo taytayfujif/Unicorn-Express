@@ -62,7 +62,7 @@ body {
   justify-content: center;
 }
 .Header-Logo img {
-  height: 80%;
+  height: 60%;
   margin: auto auto 0 auto;
 }
 .Header-Logo p {
@@ -219,7 +219,7 @@ body {
 
 #Big-Image {
   width: 100%;
-  height: 30%;
+  height: 20%;
   background-image: url("../images/Unicorn-Express.svg");
   background-position: center;
   background-size: cover;
@@ -231,11 +231,23 @@ body {
   justify-content: space-between;
 }
 
+.Small-Image {
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
 .Content {
   display: flex;
+  border-radius: 10px;
   border: 1px solid black;
   width: 75%;
   margin: 1rem auto;
+  transition: 1s;
+}
+
+.Content:hover {
+  width: 80%;
+  box-shadow: 1.5rem 1.5rem 2rem gray;
 }
 
 .Content-Text {
