@@ -18,7 +18,7 @@ body {
 
 .Header {
   display: flex;
-  height: 30%;
+  height: 25%;
   justify-content: center;
   padding: 4% 0;
   position: relative;
@@ -193,7 +193,7 @@ body {
 }
 .Signup-Block .Auth-Spread p {
   display: inline-flex;
-  color: #6e63ff;
+  color: #8a82f7;
   font-size: 1.23rem;
   margin: 0 0 0.25rem;
 }

@@ -18,7 +18,7 @@ body {
 
 .Header {
   display: flex;
-  height: 30%;
+  height: 25%;
   justify-content: center;
   padding: 4% 0;
   position: relative;
@@ -193,7 +193,7 @@ body {
 }
 .Signup-Block .Auth-Spread p {
   display: inline-flex;
-  color: #6e63ff;
+  color: #8a82f7;
   font-size: 1.23rem;
   margin: 0 0 0.25rem;
 }
@@ -232,14 +232,14 @@ body {
 }
 
 .Small-Image {
-  border-top-left-radius: 10%;
-  border-bottom-left-radius: 10%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 .Content {
   display: flex;
-  border-radius: 10px;
   border: 1px solid black;
+  border-radius: 1rem;
   width: 75%;
   margin: 1rem auto;
   transition: 1s;
@@ -262,8 +262,8 @@ body {
 }
 .Content-Text h1 {
   padding: 0 0 0.25rem;
-  border-bottom: 1px solid #94ffa6;
-  color: #6161fd;
+  border-bottom: 3px solid #97ffa4;
+  color: #8a82f7;
 }
 
 /*# sourceMappingURL=boutiqueMP.css.map */

@@ -14,9 +14,11 @@
 #Big-Image 
     width: $full-width
     height: 20%
-    background-image: url('../images/Unicorn-Express.svg')
-    background-position: center
-    background-size: cover
+    background : 
+        image: url('../images/Unicorn-Express.svg')
+        position: center
+        size: cover
+    
     
 //div that holds all the content
 #Reroute-Content
@@ -25,13 +27,14 @@
     justify-content: space-between
 
 .Small-Image
-    border-top-left-radius: 10%
-    border-bottom-left-radius: 10%
+    border:
+        top-left-radius: $box-corners
+        bottom-left-radius: $box-corners
 
 .Content 
     display: flex
-    border-radius: 10px
     border: 1px solid black
+         radius: $box-corners
     width: 75%
     margin: 1rem auto
     transition: 1s 
@@ -45,13 +48,14 @@
     display: flex
     flex-direction: column
     justify-content: space-evenly
+
     
     p,h1
         text-align: center
         margin: 0 auto
     h1 
         padding: 0 0 0.25rem
-        border-bottom: 1px solid #94ffa6
-        color: #6161fd
+        border-bottom: $header-borders
+        color: rgb(138, 130, 247)
 
 //sass --watch ./sass:./css

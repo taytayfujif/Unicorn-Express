@@ -3,7 +3,7 @@
 $full-width: 100% //variable for full width
 $full-height: 100% //variable for full height
 
-$header-height: 30% //varable for height of header
+$header-height: 25% //varable for height of header
 $header-font-size: 1.2rem //font size for header
 $header-borders: 3px solid #97ffa4 //border bottoms for header
 
@@ -16,10 +16,12 @@ $background-Signup: #ffffff url('../images/login.jpg') repeat
 $background-dimension: 360px 360px
 
 $cute-pink: #fbd6fb
+$blue: rgb(138, 130, 247)
 
 $box-corners: 1rem
 
 $overlay-layer: 1
+
 
 /* Essential Components for every Page */
 
@@ -53,10 +55,9 @@ body
     padding: 0
     list-style-type: none
     margin: auto auto 0
-
     a
         text-decoration: none
-        color: rgb(138, 130, 247)
+        color: $blue
 
 //only things on the left
 .Header-Content-Left
@@ -96,7 +97,7 @@ body
         margin: 0
         font-size: 2rem
         text-align: center
-        color: rgb(138, 130, 247)
+        color: $blue
 
 /* stuff for Signup */
 #Exit-Button
@@ -105,7 +106,7 @@ body
     height: 3rem
     background: none
     border: 3px solid black
-    border-radius: 0.5rem
+        radius: 0.5rem
     font-size: 1.5rem
     background: #F44336
     color: wheat
@@ -152,7 +153,7 @@ body
     background: white
     border: 3px solid black
     background: $background-Signup
-    background-size: $background-dimension
+        size: $background-dimension
     margin: auto
     overflow: hidden
     border-radius: $box-corners
@@ -199,7 +200,7 @@ body
             height: 3rem
             background: none
             border: 3px solid black
-            border-radius: 0.5rem
+                radius: 0.5rem
             font-size: 1.5rem
             background: #F44336
             color: wheat
@@ -211,7 +212,7 @@ body
         input
             background: #FFEB3B
             border: 2px solid black
-            border-radius: 0.5rem
+                radius: 0.5rem
             height: 2.5rem
             padding: 0.25rem
             font-size: 2rem
@@ -220,7 +221,7 @@ body
 
         p 
             display: inline-flex
-            color: #6e63ff
+            color: $blue
             font-size: 1.23rem
             margin: 0 0 0.25rem
     
