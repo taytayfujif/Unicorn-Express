@@ -203,7 +203,7 @@ body {
   padding: 2rem;
   text-align: center;
   margin: 0.5rem 0 0 0;
-  background: dimgrey;
+  background: #c487aa;
 }
 
 .Main-Page-Content {
@@ -240,6 +240,7 @@ body {
   display: flex;
   border: 1px solid black;
   border-radius: 1rem;
+  background-color: #d4d8f9;
   width: 75%;
   margin: 1rem auto;
   transition: 1s;
