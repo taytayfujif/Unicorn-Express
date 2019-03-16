@@ -1,1 +1,3 @@
 node_modules
+# Postgres Configuration 
+config.json
