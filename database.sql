@@ -25,15 +25,15 @@ CREATE TABLE project_home (
     id serial ,
     section varchar(50) NOT NULL,
     sub_section varchar(100) NOT NULL,
-    sub_subA varchar(300) NOT NULL,
-    sub_subB varchar(300) NOT NULL,
-    sub_subC varchar(300) NOT NULL,
-    sub_subD varchar(300) NOT NULL,
-    a1 varchar(300) NOT NULL,
-    b1 varchar(300) NOT NULL,
-    c1 varchar(300) NOT NULL,
-    c2 varchar(300) NOT NULL,
-    d1 varchar(300) NOT NULL
+    sub_subA varchar(400) NOT NULL,
+    sub_subB varchar(400) NOT NULL,
+    sub_subC varchar(400) NOT NULL,
+    sub_subD varchar(400) NOT NULL,
+    a1 varchar(400) NOT NULL,
+    b1 varchar(400) NOT NULL,
+    c1 varchar(400) NOT NULL,
+    c2 varchar(400) NOT NULL,
+    d1 varchar(400) NOT NULL
 );
 
 INSERT INTO project_home VALUES(
