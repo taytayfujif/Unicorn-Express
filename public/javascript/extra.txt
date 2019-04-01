@@ -1,0 +1,33 @@
+#extra stuff I dont want to delete
+
+#preload stuff
+choiceOne.fillStyle(0xfbffbf, 1); //color & alpha
+        choiceOne.fillRect(0, 0, 400, 500);
+
+        playButton.setInteractive().on('pointerhover', () => { 
+                this.sceneOne.setStyle({ fill: '#ffffff' }); 
+            }).on('pointerdown', () => {
+                console.log('works!');
+            });
+        
+        choiceTwo.fillStyle(0xffe6ba,1);
+        choiceTwo.fillRect(400, 0, 400, 500);
+
+#create stuff
+this.playButton.setInteractive().on('pointerhover', () => 
+        { 
+            this.playButton.setStyle({ fill: '#fff' }); 
+        }).on('pointerdown', () => this.scene.start('Beach'));
+
+        this.playButton.setInteractive().on('pointerhover', () => { 
+            this.playButton.setStyle({ fill: '#fff' }); 
+        }).on('pointerdown', () => {
+            this.scene.start('Beach')
+        });
+
+this.input.on('pointerdown',function(event) {
+            this.image.x = event.x;
+            this.image.y = event.y;
+        },this);
+
+this.key_A = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A); //gets key 'A' When clicked
