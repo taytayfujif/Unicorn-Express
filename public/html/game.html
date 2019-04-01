@@ -17,6 +17,34 @@
 
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script> <!--Gets Authenication -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDdPKW1vnPtaU3l37v4d6AGqV0rKjqI9AI",
+        authDomain: "super-cool-project-fa38e.firebaseapp.com", 
+        databaseURL: "https://super-cool-project-fa38e.firebaseio.com",
+        projectId: "super-cool-project-fa38e",
+        // storageBucket: "super-cool-project-fa38e.appspot.com",
+        // messagingSenderId: "1068870192660"
+    };
+    firebase.initializeApp( config ); //initalizes connection to backend
+
+    //make auth & firestore ref.
+    const auth = firebase.auth( ); //authenication reference 
+    const dataBase = firebase.firestore( ); //database reference
+
+    //update firestore settings
+    //dataBase.settings( { timestampsInSnapshots: true } ) // so we don't get errors in console
+    </script>
+
+    <script src="../javascript/auth.js"></script>
+    
+    <!--End Of Firebase Stuff-->
+
     <script src="../javascript/phaser.min.js"></script> <!--Phaser Libary-->
     <script src="../javascript/sceneOne.js"></script>
     <script src="../javascript/magic.js"></script>
