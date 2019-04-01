@@ -3,11 +3,11 @@
 $full-width: 100% //variable for full width
 $full-height: 100% //variable for full height
 
-$header-height: 25% //varable for height of header
+$header-height: 30% //varable for height of header
 $header-font-size: 1.2rem //font size for header
 $header-borders: 3px solid #97ffa4 //border bottoms for header
 
-$header-img-height: 60%
+$header-img-height: 80%
 
 $background: #ffffff url('../images/background.jpg') repeat 
 $background-dimension: 360px 360px
@@ -15,14 +15,11 @@ $background-dimension: 360px 360px
 $background-Signup: #ffffff url('../images/login.jpg') repeat
 $background-dimension: 360px 360px
 
-$cute-blue:#d4d8f9
 $cute-pink: #fbd6fb
-$blue: rgb(138, 130, 247)
 
 $box-corners: 1rem
 
 $overlay-layer: 1
-
 
 /* Essential Components for every Page */
 
@@ -56,9 +53,10 @@ body
     padding: 0
     list-style-type: none
     margin: auto auto 0
+
     a
         text-decoration: none
-        color: $blue
+        color: rgb(138, 130, 247)
 
 //only things on the left
 .Header-Content-Left
@@ -98,7 +96,7 @@ body
         margin: 0
         font-size: 2rem
         text-align: center
-        color: $blue
+        color: rgb(138, 130, 247)
 
 /* stuff for Signup */
 #Exit-Button
@@ -107,7 +105,7 @@ body
     height: 3rem
     background: none
     border: 3px solid black
-        radius: 0.5rem
+    border-radius: 0.5rem
     font-size: 1.5rem
     background: #F44336
     color: wheat
@@ -154,7 +152,7 @@ body
     background: white
     border: 3px solid black
     background: $background-Signup
-        size: $background-dimension
+    background-size: $background-dimension
     margin: auto
     overflow: hidden
     border-radius: $box-corners
@@ -201,7 +199,7 @@ body
             height: 3rem
             background: none
             border: 3px solid black
-                radius: 0.5rem
+            border-radius: 0.5rem
             font-size: 1.5rem
             background: #F44336
             color: wheat
@@ -213,16 +211,15 @@ body
         input
             background: #FFEB3B
             border: 2px solid black
-                radius: 0.5rem
+            border-radius: 0.5rem
             height: 2.5rem
             padding: 0.25rem
             font-size: 2rem
             color: #9C27B0
-            
 
         p 
             display: inline-flex
-            color: $blue
+            color: #6e63ff
             font-size: 1.23rem
             margin: 0 0 0.25rem
     
@@ -234,4 +231,4 @@ body
     padding: 2rem
     text-align: center
     margin: 0.5rem 0 0 0
-    background: #c487aa
+    background: dimgrey
