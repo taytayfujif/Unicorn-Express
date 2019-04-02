@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <title>Template Article</title>
+</head>
+
+<style>
+    #root,html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .brand-logo > img {
+        height: 97.41px;
+    }
+    .homeHeader {
+        height: auto;
+        background-color: rgba(0,0,0,0);
+    }
+    .contentRow {
+        margin: 0;
+        height: 100%;
+    }
+    .headerContent > a{
+        color: #FF8AB4;
+    }
+    .parallax img { 
+        width: 100%; 
+    }
+    .nav-wrapper::after {
+        content: ""; 
+        display: block; 
+        margin: 0 auto;
+        width: 43.37899543378995vh; 
+        padding-top: 5px; 
+        border-bottom: 0.25px solid #77FFC6;
+    }
+</style>
+
+<body>
+    <div id="root">
+        <nav class=" nav-wrapper row z-depth-0 homeHeader"> <!--Navigation & Stuff-->
+
+                <div class="row">
+                    
+                    <div class="col s12 m1 left">
+                        <div class="brand-logo">
+                            <img src="../assets/Logo_footer.png" alt="Neado">
+                        </div>
+                    </div>
+
+                    <div class="col m11 right">
+
+                        <div class="row contentRow">
+
+                            <div class="col m3 center-align headerContent">
+                                <a href="#">
+                                    <h4>Corner Club</h4>
+                                </a>
+                                
+                            </div>
+
+                            <div class="col m3 center-align headerContent">
+                                <a href="#">
+                                    <h4>Present Saving</h4>
+                                </a>
+                                
+                            </div>
+
+                            <div class="col m3 center-align headerContent">
+                                <a href="#">
+                                    <h4>Ownership</h4>
+                                </a>
+                                
+                            </div>
+
+                            <div class="col m3 center-align headerContent">
+                                <a href="#">
+                                    <h4>Games</h4>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+            
+        </nav>
+
+    </div>
+    <script src="../resources/jquery.js"></script>
+    <script src="../materialize/js/bin/materialize.min.js"></script>
+    <script>
+        // $(document).ready(function() {
+        //     $('.parallax').parallax();
+        // });
+    </script>
+</body>
+</html>
