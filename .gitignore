@@ -1,3 +1,6 @@
+# package directories
 node_modules
-# Postgres Configuration 
+jspm_packages
 config.json
+# Serverless directories
+.serverless
