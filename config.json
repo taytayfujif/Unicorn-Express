@@ -1,0 +1,8 @@
+{
+    "table": "project_home",
+    "host": "jrdevleague.cb9co1xxtizk.us-west-2.rds.amazonaws.com",
+    "database": "whs_taylor",
+    "user": "taylor",
+    "password": "dog3",
+    "port": 5432
+  }
