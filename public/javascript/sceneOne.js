@@ -10,12 +10,15 @@ class sceneOne extends Phaser.Scene {
 
         // choiceOneText.(0, 100, 800, 100);
 
-
         this.load.image('background','../assets/GameOne/Background.png');
         this.load.image('topBox','../assets/GameOne/Opening_Box.png');
         this.load.image('bottomBox','../assets/GameOne/Bottom_Box.png');
         this.load.image('card1','../assets/GameOne/CardOne_SceneOne.png'); //card one
         this.load.image('card2','../assets/GameOne/CardTwo_SceneOne.png'); //card two
+
+        this.load.audio('audioFiles',[
+            
+        ]);
     }
 
     create() { //loads in the images and stuff for game
@@ -87,7 +90,7 @@ class sceneOne extends Phaser.Scene {
             this.cardOne.destroy();
             this.cardTwo.destroy();
             this.bottomBox.destroy();
-            this.score += 500;
+            this.score -= 500;
 
             this.sendData(this.score);
 
