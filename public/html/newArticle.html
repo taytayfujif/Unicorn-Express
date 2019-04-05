@@ -90,8 +90,8 @@
     }
 
     .bigCard:hover .card-image, .smallCard:hover .card-image {
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
     }
     
     .bigCard:hover .cardName, .smallCard:hover .cardName {
@@ -102,6 +102,31 @@
     /* small card stuff */
     .smallCard {
         height: 134px;
+    }
+
+    /* article Stuff */
+    .mainHeader {
+        font-size: 2.67rem;
+        font-weight: 300;
+        color: #77FFC6;
+    }
+
+    .mainHeader::after {
+        content:"";
+        display: block;
+        width: 43.37899543378995vh; 
+        padding-top: 10px; 
+        border-bottom: 0.25px solid rgb(218, 165, 243);
+    }
+
+    .subHeaders {
+        color: #FF8AB4;
+        font-size: 1.783rem;
+        font-weight:thin;
+    }
+
+    .content {
+        font-size: 1.534rem;
     }
 </style>
 
@@ -276,36 +301,43 @@
 
                 <div class="row">
 
-                    <div class="col s12 m6">
+                    <div class="col s12">
                         
-                        <h1 data-bind="text:obtainedData[0].sub_section"></h1>
-                        <h5 data-bind= "text:obtainedData[0].sub_suba"></h5>
-                        <p data-bind= "text:obtainedData[0].a1"></p>
-                        <h5 data-bind= "text:obtainedData[0].sub_subb"></h5>
-                        <p data-bind= "text:obtainedData[0].b1"></p>
-                        <h5 data-bind= "text:obtainedData[0].sub_subc"></h5>
-                        <p data-bind= "text:obtainedData[0].c1"></p>
-                        <p data-bind= "text:obtainedData[0].c2"></p>
+                        <div id="ownBenefits">
 
-                        <h1 data-bind="text:obtainedData[1].sub_section"></h1>
-                        <h5 data-bind= "text:obtainedData[1].sub_suba"></h5>
-                        <p data-bind= "text:obtainedData[1].a1"></p>
-                        <h5 data-bind= "text:obtainedData[1].sub_subb"></h5>
-                        <p data-bind= "text:obtainedData[1].b1"></p>
+                            <h1 class="mainHeader" data-bind="text:obtainedData[0].sub_section"></h1>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[0].sub_suba"></h5>
+                            <p class="content" data-bind= "text:obtainedData[0].a1"></p>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[0].sub_subb"></h5>
+                            <p class="content" data-bind= "text:obtainedData[0].b1"></p>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[0].sub_subc"></h5>
+                            <p class="content" data-bind= "text:obtainedData[0].c1"></p>
+                            <p class="content" data-bind= "text:obtainedData[0].c2"></p>
+
+                        </div>
+
+                        <div id="buyHome">
+
+                            <h1 class="mainHeader" data-bind="text:obtainedData[1].sub_section"></h1>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[1].sub_suba"></h5>
+                            <p class="content" data-bind= "text:obtainedData[1].a1"></p>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[1].sub_subb"></h5>
+                            <p class="content" data-bind= "text:obtainedData[1].b1"></p>
+
+                        </div>
                         
-                        <h1 data-bind="text:obtainedData[2].sub_section"></h1>
-                        <h5 data-bind= "text:obtainedData[2].sub_suba"></h5>
-                        <p data-bind= "text:obtainedData[2].a1"></p>
-                        <h5 data-bind= "text:obtainedData[2].sub_subb"></h5>
-                        <p data-bind= "text:obtainedData[2].b1"></p>
-                        <h5 data-bind= "text:obtainedData[2].sub_subc"></h5>
-                        <p data-bind= "text:obtainedData[2].c1"></p>
-                       
-                       
+                        <div id="securAndWealth">
 
+                            <h1 class="mainHeader" data-bind="text:obtainedData[2].sub_section"></h1>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[2].sub_suba"></h5>
+                            <p class="content" data-bind= "text:obtainedData[2].a1"></p>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[2].sub_subb"></h5>
+                            <p class="content" data-bind= "text:obtainedData[2].b1"></p>
+                            <h5 class="subHeaders" data-bind= "text:obtainedData[2].sub_subc"></h5>
+                            <p class="content" data-bind= "text:obtainedData[2].c1"></p>
+
+                        </div>
                         
- 
-
 
                     </div>
 
