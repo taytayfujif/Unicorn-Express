@@ -10,15 +10,28 @@ class sceneOne extends Phaser.Scene {
 
         // choiceOneText.(0, 100, 800, 100);
 
-
         this.load.image('background','../assets/GameOne/Background.png');
         this.load.image('topBox','../assets/GameOne/Opening_Box.png');
         this.load.image('bottomBox','../assets/GameOne/Bottom_Box.png');
         this.load.image('card1','../assets/GameOne/CardOne_SceneOne.png'); //card one
         this.load.image('card2','../assets/GameOne/CardTwo_SceneOne.png'); //card two
+
+        this.load.audio('audioFiles',[
+            
+        ]);
     }
 
     create() { //loads in the images and stuff for game
+
+        this.score = 0;
+
+        this.sendData = function(obtainedScore) {
+            dataBase.collection('users').doc(auth.currentUser.uid).update({
+                score: obtainedScore
+            }).then(() => {
+                console.log("low key it worked! Check the score");
+            })
+        }
 
         this.background = this.add.image(400,300,'background');
         this.topBox = this.add.sprite(400,46.5,'topBox');
@@ -50,6 +63,21 @@ class sceneOne extends Phaser.Scene {
             this.cardOne.destroy();
             this.cardTwo.destroy();
             this.bottomBox.destroy();
+            this.score += 500;
+
+            this.sendData(this.score);
+
+            this.ScenerioText = this.make.text({
+                x:800/4,
+                y:600/2,
+                boundsAlignH: "center", 
+                boundsAlignV: "middle",
+                text: 'Thanks for submitting! You Get 500 Points for that',
+                style: {
+                    font: '20px monospace',
+                    fill: '#000000'
+                }
+            });
         });
 
         this.cardTwo.setInteractive().on('pointerhover', () => 
@@ -62,6 +90,21 @@ class sceneOne extends Phaser.Scene {
             this.cardOne.destroy();
             this.cardTwo.destroy();
             this.bottomBox.destroy();
+            this.score -= 500;
+
+            this.sendData(this.score);
+
+            this.ScenerioText = this.make.text({
+                x:800/4,
+                y:600/2,
+                boundsAlignH: "center", 
+                boundsAlignV: "middle",
+                text: 'Thanks for submitting! You Get 500 Points for that',
+                style: {
+                    font: '20px monospace',
+                    fill: '#000000'
+                }
+            });
         });
     }
 
