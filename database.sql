@@ -114,47 +114,51 @@ INSERT INTO project_home VALUES(
 
 INSERT INTO project_home VALUES(
     DEFAULT,
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'Obtaining a house?',
+    'There is no doubt that the most important part of homeownership is buying a house. In this section we have simplified buying a house into a few short steps: Researching, qualified & approved for credit, real estate agent, and Making a offer. By following these steps obtaining a house should be a piece of cake!
+',
+    'Research!',
+    'Start early',
+    'Price',
+    'NONE',
+    'NONE',
+    'When looking to buy a house it is important to start researching early. Look through websites, magainzines, etc. to find current house listings. This will also help you get an idea for what kind of house you want.',
+    'While researching start determining your price range/ how much you can afford.Lenders generally recommend that people look for homes that cost no more than three to five times their annual household income if the home buyers plan to make a 20% down payment and have a moderate amount of other debt.',
+    'NONE',
+    'NONE',
+    'NONE'
 );
 
 INSERT INTO project_home VALUES(
     DEFAULT,
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'Obtaining a house?',
+    'NONE',
+    'Final Steps',
+    'Qualified',
+    'Approved ',
+    'NONE',
+    'NONE'
+    'Before you start looking for a home, you will need to know how much you can actually spend. The best way to do that is to get qualified for a mortgage. To get qualified, you need to provide financial information to a mortgage banker, such as your income and the amount of savings and investments you have. This will help your lender know how much they can lend you. ',
+    'This will tell you the price range of the homes you should be looking at. Later, you can get approved for credit, which involves providing your financial documents so your lender can verify your financial status and credit.',
+    'NONE',
+    'NONE',
+    'NONE'
 );
 
 INSERT INTO project_home VALUES(
     DEFAULT,
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'Obtaining a house?',
+    'NONE',
+    'Find the right real estate agent',
+    'Why it’s important?',
+    'What they have to offer? ',
+    'NONE',
+    'NONE',
+    'Real estate agents play a key role in buying a house. They will be able to give you insight on things that the public would not have access to about the house. ',
+    'As  real estate agents they will be able to provide you with large amounts of information with buying a home and negotiating skills. The best part is that it does not cost you anything to use an agent; they will be copmanstated by the seller of the house. ',
+    'NONE',
+    'NONE',
+    'NONE'
 );
 
 INSERT INTO project_home VALUES(
