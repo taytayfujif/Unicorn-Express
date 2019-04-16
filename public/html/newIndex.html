@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../css/materialize.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>Unicorn Express</title>
 </head>
 
@@ -54,67 +55,6 @@
         width: 25%;
         margin: auto;
         background-color: #77FFC6;
-    }
-
-    .page-footer {
-        padding-top: 5px;
-        background: #F3F3F3;
-        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    .page-footer.dropdown > * {
-        margin-bottom: 0;
-    }
-    .footerRow {
-        margin-bottom: 0;
-    }
-
-    .footerContainer {
-        width: 100%;
-    }
-
-    .footerSubHeader {
-        margin: 0.3rem 0 0.46rem 0;
-    }
-
-    .footerSubHeader::after {
-        content: ""; 
-        display: block; 
-        width: 10vh; 
-        padding-top: 5px; 
-        border-bottom: 0.25px solid #77FFC6;
-    }
-
-    .footerContent {
-        font-size: 13px;
-    }
-
-    .verticalDivider {
-	    position: relative;
-    }
-
-    .verticalDivider:after {
-        clear: both;
-        content: " ";
-        display: block;
-        height: 0;
-        visibility: hidden;
-    }
-
-    .verticalDivider .column:not(:first-child):after, .vertical-divider .columns:not(:first-child):after{
-        background:#c3c3c3;
-        bottom: 0;
-        height: 50%;
-        content: " ";
-        margin-left: -5%;
-        position: absolute;
-        top: 25%;
-        width: 1px;
-    }
-
-    .copyright {
-        font-size: 10px;
-        font-weight: bold;
     }
 
     .card-title {
@@ -244,8 +184,8 @@
             </div>
             <div class="col s12 l6 offset-l1 pull-l2 left-align pull-l5">
                 <h3 class="subHeaders">Why Here?</h3>
-                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus lectus, vehicula ac tortor quis, bibendum dictum turpis. Maecenas ornare blandit lectus quis feugiat. Cras efficitur eu quam sed vestibulum. Quisque et tristique neque...</p>
-                <a href="./newArticle.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
+                <p class="grey-text text-lighten-2" data-bind="text:obtainedData[9].summary"></p>
+                <a href="./newArticle4.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
                     <i class="material-icons left">wrap_text</i>
                     <span>View More</span>
                 </a>
@@ -321,10 +261,10 @@
 
                                 <div class="row footerRow"> <!--Level 2 of a inner Row-->
 
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Corner Club</a>
+                                    <a href="../html/newArticle.html" class="col s12 grey-text text-lighten-1 light footerContent">Corner Club</a>
                                     <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Games</a>
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Home Ownership</a>
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Present Saving</a>
+                                    <a href="../html/newArticle2.html" class="col s12 grey-text text-lighten-1 light footerContent">Home Ownership</a>
+                                    <a href="../html/newArticle3.html" class="col s12 grey-text text-lighten-1 light footerContent">Present Saving</a>
 
                                 </div>
 
