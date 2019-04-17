@@ -71,11 +71,15 @@
                 <div class="row">
 
                     <div class="col m5">
+                        <a href="newArticle.html">
                         <h5>Corner Club</h5>
+                        </a>
                     </div>
 
                     <div class="col m5 offset-m2">
+                        <a href="newArticle2.html">
                         <h5>Present Saving</h5>
+                        </a>
                     </div>
 
                 </div>
@@ -91,11 +95,15 @@
                 <div class="row">
 
                     <div class="col m5">
-                        <h5 class="floatRight">House Ownership</h5>
+                        <a href="newArticle3.html">
+                            <h5>Obtaining a House</h5>
+                        </a>
                     </div>
         
                     <div class="col m5 offset-m2">
-                        <h5 class="floatRight">Why Here?</h5>
+                        <a href="newArticle4.html">
+                            <h5 class="floatRight">Why Here?</h5>
+                        </a>
                     </div>
         
                 </div>
@@ -134,7 +142,7 @@
             </div>
             <div class="col s12 l6 offset-l1 pull-l2 right-align">
                 <h3 class="subHeaders">Around the Corner</h3>
-                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus lectus, vehicula ac tortor quis, bibendum dictum turpis. Maecenas ornare blandit lectus quis feugiat. Cras efficitur eu quam sed vestibulum. Quisque et tristique neque...</p>
+                <p class="grey-text text-lighten-2" data-bind="text:obtainedData[0].summary"></p>
                 <a href="./newArticle.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
                     <i class="material-icons left">wrap_text</i>
                     <span>View More</span>
@@ -148,7 +156,7 @@
             </div>
             <div class="col s12 l6 offset-l1 pull-l2 left-align pull-l5">
                 <h3 class="subHeaders">Present Savings</h3>
-                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus lectus, vehicula ac tortor quis, bibendum dictum turpis. Maecenas ornare blandit lectus quis feugiat. Cras efficitur eu quam sed vestibulum. Quisque et tristique neque...</p>
+                <p class="grey-text text-lighten-2" data-bind="text:obtainedData[3].summary"></p>
                 <a href="./newArticle2.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
                     <i class="material-icons left">wrap_text</i>
                     <span>View More</span>
@@ -162,8 +170,8 @@
             </div>
             <div class="col s12 l6 offset-l1 pull-l2 right-align">
                 <h3 class="subHeaders">Obtaining a House</h3>
-                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus lectus, vehicula ac tortor quis, bibendum dictum turpis. Maecenas ornare blandit lectus quis feugiat. Cras efficitur eu quam sed vestibulum. Quisque et tristique neque...</p>
-                <a href="./newArticle.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
+                <p class="grey-text text-lighten-2" data-bind="text:obtainedData[6].summary"></p>
+                <a href="./newArticle3.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
                     <i class="material-icons left">wrap_text</i>
                     <span>View More</span>
                 </a>
@@ -176,8 +184,8 @@
             </div>
             <div class="col s12 l6 offset-l1 pull-l2 left-align pull-l5">
                 <h3 class="subHeaders">Why Here?</h3>
-                <p class="grey-text text-lighten-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris purus lectus, vehicula ac tortor quis, bibendum dictum turpis. Maecenas ornare blandit lectus quis feugiat. Cras efficitur eu quam sed vestibulum. Quisque et tristique neque...</p>
-                <a href="./newArticle.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
+                <p class="grey-text text-lighten-2" data-bind="text:obtainedData[9].summary"></p>
+                <a href="./newArticle4.html" class="btn-small waves-effect z-depth-0 pink lighten-3">
                     <i class="material-icons left">wrap_text</i>
                     <span>View More</span>
                 </a>
@@ -253,10 +261,10 @@
 
                                 <div class="row footerRow"> <!--Level 2 of a inner Row-->
 
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Corner Club</a>
+                                    <a href="../html/newArticle.html" class="col s12 grey-text text-lighten-1 light footerContent">Corner Club</a>
                                     <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Games</a>
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Home Ownership</a>
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Present Saving</a>
+                                    <a href="../html/newArticle2.html" class="col s12 grey-text text-lighten-1 light footerContent">Home Ownership</a>
+                                    <a href="../html/newArticle3.html" class="col s12 grey-text text-lighten-1 light footerContent">Present Saving</a>
 
                                 </div>
 
@@ -312,7 +320,9 @@
         </div>
 
     </div>
+    <script src="../resources/jquery.js"></script>
     <script src="../materialize/js/bin/materialize.min.js"></script>
+    <script src="../resources/knockout-3.5.0.js"></script>
     <script src="../javascript//returnData.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ CREATE TABLE project_home (
     id serial ,
     section varchar(50) NOT NULL,
     summary varchar(500) NOT NULL,
-    sub_section varchar(100) NOT NULL,
+    sub_section varchar(100) NOT NULL, 
     sub_subA varchar(400) NOT NULL,
     sub_subB varchar(400) NOT NULL,
     sub_subC varchar(400) NOT NULL,
@@ -114,60 +114,97 @@ INSERT INTO project_home VALUES(
 
 INSERT INTO project_home VALUES(
     DEFAULT,
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'Obtaining a house?',
+    'There is no doubt that the most important part of homeownership is buying a house. In this section we have simplified buying a house into a few short steps: Researching, qualified & approved for credit, real estate agent, and Making a offer. By following these steps obtaining a house should be a piece of cake!',
+    'Research!',
+    'Start early',
+    'Price',
+    'NONE',
+    'NONE',
+    'When looking to buy a house it is important to start researching early. Look through websites, magainzines, etc. to find current house listings. This will also help you get an idea for what kind of house you want.',
+    'While researching start determining your price range/ how much you can afford.Lenders generally recommend that people look for homes that cost no more than three to five times their annual household income if the home buyers plan to make a 20% down payment and have a moderate amount of other debt.',
+    'NONE',
+    'NONE',
+    'NONE'
 );
 
 INSERT INTO project_home VALUES(
     DEFAULT,
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'Obtaining a house?',
+    'NONE',
+    'Final Steps',
+    'Qualified',
+    'Approved ',
+    'NONE',
+    'NONE',
+    'Before you start looking for a home, you will need to know how much you can actually spend. The best way to do that is to get qualified for a mortgage. To get qualified, you need to provide financial information to a mortgage banker, such as your income and the amount of savings and investments you have. This will help your lender know how much they can lend you. ',
+    'This will tell you the price range of the homes you should be looking at. Later, you can get approved for credit, which involves providing your financial documents so your lender can verify your financial status and credit.',
+    'NONE',
+    'NONE',
+    'NONE'
 );
 
 INSERT INTO project_home VALUES(
     DEFAULT,
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'Obtaining a house?',
+    'NONE',
+    'Find the right real estate agent',
+    'Why it is important?',
+    'What they have to offer? ',
+    'NONE',
+    'NONE',
+    'Real estate agents play a key role in buying a house. They will be able to give you insight on things that the public would not have access to about the house. ',
+    'As  real estate agents they will be able to provide you with large amounts of information with buying a home and negotiating skills. The best part is that it does not cost you anything to use an agent; they will be copmanstated by the seller of the house. ',
+    'NONE',
+    'NONE',
+    'NONE'
 );
 
 INSERT INTO project_home VALUES(
     DEFAULT,
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    ''
+    'Why not stay in Hawaii?',
+    'You always here about how hard it is to live in Hawaii because it is so expensive. Though if you are able to follow the information we have provided you buying a home in Hawaii might not be as expensive and impossible as you think. In addition to that there are so many reasons to stay!',
+    'Local Homeownership Means',
+    'Building local communities',
+    'Preventing Potential Dangers',
+    'NONE',
+    'NONE',
+    'By staying in Hawaii and buying a house that means that our communities will stay the same or will even get better. Having local homeowners means that they will maintain and take care of a house.',
+    'In addition to that if no locals buy houses down here it opens opportunities for foreign buyers. If houses are bought by foreign buyers they will not have the same need or want to upkeep them.',
+    'NONE',
+    'NONE',
+    'NONE'
 );
+
+INSERT INTO project_home VALUES(
+    DEFAULT,
+    'Why not stay in Hawaii?',
+    'NONE',
+    'Why would you Leave?',
+    'It is Your “Home”',
+    'Support',
+    'NONE',
+    'NONE',
+    'If you grew up in Hawaii you would feel a sense of being at home and comfortable where you are at. Why would you want to leave and possibly struggle to adjust in a new area. By staying you will be able to share the same experiences you had with your parents with your kids.',
+    'Another reason not to leave is that your support system is here. When raising kids it is important to let them grow up around family. In addition to that without family it will be hard for you to find someone to lean on in times in need.',
+    'NONE',
+    'NONE',
+    'NONE'
+);
+
+INSERT INTO project_home VALUES(
+    DEFAULT,
+    'Why not stay in Hawaii?',
+    'NONE',
+    'Benefits of hawaii',
+    'Aloha Spirit ',
+    'Culturally diverse',
+    'NONE',
+    'NONE',
+    'Hawaii is special because the people here have something that other do not which is “Aloha Spirit”. One of the first things many people notice when leaving Hawaii is that people are not as friendly.',
+    'Hawaii is also known as a melting pot, anywhere you go on the island you will see a mixture of culture and diversity. Everything from the food to the people and even the way they speak.',
+    'NONE',
+    'NONE',
+    'NONE'
+);
+
