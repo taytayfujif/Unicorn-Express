@@ -208,3 +208,30 @@ INSERT INTO project_home VALUES(
     'NONE'
 );
 
+
+
+
+                         <div id="homeowner">
+                        
+                        <h1 class="mainHeader" data-bind="text:obtainedData[9].sub_section"></h1>
+                        <h5 class="subHeaders" data-bind= "text:obtainedData[9].sub_suba"></h5>
+                        <p  class="content" data-bind= "text:obtainedData[9].a1"></p>
+                        <h5 class="subHeaders" data-bind= "text:obtainedData[9].sub_subb"></h5>
+                        <p class="content" data-bind= "text:obtainedData[9].b1"></p>
+                        
+                     </div>
+                     <div id="leave">
+                        <h1 class="mainHeader" data-bind="text:obtainedData[10].sub_section"></h1>
+                        <h5 class="subHeaders" data-bind= "text:obtainedData[10].sub_suba"></h5>
+                        <p  class="content" data-bind= "text:obtainedData[10].a1"></p>
+                        <h5 class="subHeaders" data-bind= "text:obtainedData[10].sub_subb"></h5>
+                        <p class="content" data-bind= "text:obtainedData[10].b1"></p>
+                    </div>
+                    <div id="benefits">
+                        <h1 class="mainHeader" data-bind="text:obtainedData[11].sub_section"></h1>
+                        <h5 class="subHeaders" data-bind= "text:obtainedData[11].sub_suba"></h5>
+                        <p  class="content" data-bind= "text:obtainedData[11].a1"></p>
+                        <h5 class="subHeaders" data-bind= "text:obtainedData[11].sub_subb"></h5>
+                        <p class="content" data-bind= "text:obtainedData[11].b1"></p>
+                    </div>  
+                    
