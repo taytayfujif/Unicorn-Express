@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/materialize.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <title>Document</title>
+</head>
+
+<style>
+#root,html,body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .brand-logo > img {
+        height: 97.41px;
+    }
+    .homeHeader {
+        height: 20%;
+        background-color: rgba(0,0,0,0);
+    }
+    .contentRow {
+        margin: 0;
+        height: 100%;
+    }
+    .headerContent > a, .col > h4{
+        color: #FF8AB4;
+    }
+    .headerContent > a > h4{
+        font-weight: lighter;
+        transition: all 1s ease;
+    }
+
+    .headerContent > a > h4:hover {
+        color: #B3EDFF;
+    }
+
+    .col > h4 {
+        font-weight: bold;
+    }
+    .parallax img { 
+        width: 100%; 
+    }
+    .nav-wrapper::after, .cardContainer::after {
+        content: ""; 
+        display: block; 
+        margin: 0 auto;
+        width: 43.37899543378995vh; 
+        padding-top: 5px; 
+        border-bottom: 0.25px solid #77FFC6;
+    }
+
+</style>
+
+<body>
+
+    <div id="root">
+
+        <nav class=" nav-wrapper row z-depth-0 homeHeader"> <!--Navigation & Stuff-->
+
+                <div class="row">
+                    
+                    <div class="col s12 m1 left">
+                        <div class="brand-logo">
+                            <img src="../assets/Logo_footer.png" alt="Neado">
+                        </div>
+                    </div>
+
+                    <div class="col m11 right">
+
+                        <div class="row contentRow">
+
+                            <div class="col m3 center-align headerContent hide-on-small-only">
+                                <a href="#">
+                                    <h4>Corner Club</h4>
+                                </a>
+                                
+                            </div>
+
+                            <div class="col m3 center-align headerContent hide-on-small-only">
+                                <a href="#">
+                                    <h4>Present Saving</h4>
+                                </a>
+                                
+                            </div>
+
+                            <div class="col m3 center-align headerContent hide-on-small-only">
+                                <a href="#">
+                                    <h4>Ownership</h4>
+                                </a>
+                                
+                            </div>
+
+                            <div class="col m3 center-align headerContent hide-on-small-only">
+                                <a href="#">
+                                    <h4>Games</h4>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+            
+        </nav> <!--Navigation Bar End-->
+        
+
+        <!--Where meat of the content is-->
+
+        <div id="content" class="container">
+
+            <div class="row" id="cardContainer">
+
+                <div class="col s12">
+                    <h2 style="margin:0;">Games & Junk</h2>
+                </div>
+
+                 <div class="col s12 m5 offset-m1">
+                    <div class="card small">
+                        <div class="card-image">
+                            <img src="../images/Card_New/Card_Art_One.jpg" alt="A random image of something">
+                        </div>
+                        <span class="card-title">Lorem Ipsum</span>
+                        <div class="card-content">
+                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quis molestiae aspernatur iusto illo veniam eius ut, dignissimos corrupti nesciunt eum animi delectus quas dolores nobis, asperiores reiciendis, vel iste?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Card Two-->
+                <div class="col s12 m5 ">
+                    <div class="card small">
+                        <div class="card-image">
+                            <img src="../images/Card_New/Card_Art_One.jpg" alt="A random image of something">
+                        </div>
+                        <span class="card-title">Lorem Ipsum</span>
+                        <div class="card-content">
+                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quis molestiae aspernatur iusto illo veniam eius ut, dignissimos corrupti nesciunt eum animi delectus quas dolores nobis, asperiores reiciendis, vel iste?</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--All of the Juicy Meat ends here-->
+
+        <div class="page-footer"> <!-- Footer Stuff-->
+
+            <div class="container footerContainer"> <!--Main Container it is in-->
+                
+                <div class="row footerRow verticalDivider"> <!--the general row it is in-->
+
+                    <div class="col s12 m3 hide-on-small-only column"> <!--Column 1~Image-->
+
+                        <img src="../assets/Logo_footer.png" alt="A flat illistrated rndom">
+
+                    </div>
+
+                    <div class="col s12 m3 column"> <!--Column 2~Links-->
+
+                        <div class="row footerRow"> <!--Level 1 of a inner Row-->
+
+                            <div class="col s12 grey-text text-lighten-1 light">
+                                <h6 class="footerSubHeader">
+                                    Links
+                                </h6>
+                            </div>
+
+                            <div class="col s12">
+
+                                <div class="row footerRow"> <!--Level 2 of a inner Row-->
+
+                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Corner Club</a>
+                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Games</a>
+                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Home Ownership</a>
+                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Present Saving</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 m3 column"> <!--Column 2~Links-->
+
+                        <div class="row footerRow"> <!--Level 1 of a inner Row-->
+
+                            <div class="col s12 grey-text text-lighten-1 light">
+                                <h6 class="footerSubHeader">
+                                    Contact
+                                </h6>
+                            </div>
+
+                            <div class="col s12">
+
+                                <div class="row footerRow"> <!--Level 2 of a inner Row-->
+
+                                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+                                        <i class="material-icons left">phone</i>
+                                        <span>(808)420-6969</span>
+                                    </div>
+
+                                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+                                        <i class="material-icons left">mail</i>
+                                        <span>placeholder@gmail.com</span>
+                                    </div>
+
+                                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+                                        <i class="material-icons left">business</i>
+                                        <span>1539 N. Calvert</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col s12 m3 column center-align valign-wrapper"> <!--Column 3~Copyright-->
+                        <p class="grey-text lighten-1 bold copyright">© Copyright 2019 - The Unicorn Express - All Rights Reserved</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="../materialize/js/bin/materialize.min.js"></script>
+</body>
+</html>
