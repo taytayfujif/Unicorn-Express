@@ -60,54 +60,7 @@
 
     <div id="root">
 
-        <nav class=" nav-wrapper row z-depth-0 homeHeader"> <!--Navigation & Stuff-->
-
-                <div class="row">
-                    
-                    <div class="col s12 m1 left">
-                        <div class="brand-logo">
-                            <img src="../assets/Logo_footer.png" alt="Neado">
-                        </div>
-                    </div>
-
-                    <div class="col m11 right">
-
-                        <div class="row contentRow">
-
-                            <div class="col m3 center-align headerContent hide-on-small-only">
-                                <a href="#">
-                                    <h4>Corner Club</h4>
-                                </a>
-                                
-                            </div>
-
-                            <div class="col m3 center-align headerContent hide-on-small-only">
-                                <a href="#">
-                                    <h4>Present Saving</h4>
-                                </a>
-                                
-                            </div>
-
-                            <div class="col m3 center-align headerContent hide-on-small-only">
-                                <a href="#">
-                                    <h4>Ownership</h4>
-                                </a>
-                                
-                            </div>
-
-                            <div class="col m3 center-align headerContent hide-on-small-only">
-                                <a href="#">
-                                    <h4>Games</h4>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-            
-        </nav> <!--Navigation Bar End-->
-        
-
+        <Footer-Sub></Footer-Sub>
         <!--Where meat of the content is-->
 
         <div id="content" class="container">
@@ -149,93 +102,16 @@
 
         <!--All of the Juicy Meat ends here-->
 
-        <div class="page-footer"> <!-- Footer Stuff-->
-
-            <div class="container footerContainer"> <!--Main Container it is in-->
-                
-                <div class="row footerRow verticalDivider"> <!--the general row it is in-->
-
-                    <div class="col s12 m3 hide-on-small-only column"> <!--Column 1~Image-->
-
-                        <img src="../assets/Logo_footer.png" alt="A flat illistrated rndom">
-
-                    </div>
-
-                    <div class="col s12 m3 column"> <!--Column 2~Links-->
-
-                        <div class="row footerRow"> <!--Level 1 of a inner Row-->
-
-                            <div class="col s12 grey-text text-lighten-1 light">
-                                <h6 class="footerSubHeader">
-                                    Links
-                                </h6>
-                            </div>
-
-                            <div class="col s12">
-
-                                <div class="row footerRow"> <!--Level 2 of a inner Row-->
-
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Corner Club</a>
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Games</a>
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Home Ownership</a>
-                                    <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Present Saving</a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col s12 m3 column"> <!--Column 2~Links-->
-
-                        <div class="row footerRow"> <!--Level 1 of a inner Row-->
-
-                            <div class="col s12 grey-text text-lighten-1 light">
-                                <h6 class="footerSubHeader">
-                                    Contact
-                                </h6>
-                            </div>
-
-                            <div class="col s12">
-
-                                <div class="row footerRow"> <!--Level 2 of a inner Row-->
-
-                                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
-                                        <i class="material-icons left">phone</i>
-                                        <span>(808)420-6969</span>
-                                    </div>
-
-                                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
-                                        <i class="material-icons left">mail</i>
-                                        <span>placeholder@gmail.com</span>
-                                    </div>
-
-                                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
-                                        <i class="material-icons left">business</i>
-                                        <span>1539 N. Calvert</span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col s12 m3 column center-align valign-wrapper"> <!--Column 3~Copyright-->
-                        <p class="grey-text lighten-1 bold copyright">© Copyright 2019 - The Unicorn Express - All Rights Reserved</p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
+        <Main-Footer></Main-Footer>
     </div>
 
-    
+    <script src="../components/footerArticle.js" type="riot/tag"></script>
+    <script src="../components/footer.js" type="riot/tag"></script>
+    <script src="../resources/riot+compiler.min.js.js"></script>
     <script src="../materialize/js/bin/materialize.min.js"></script>
+
+    <script>
+        riot.mount('*');
+    </script>
 </body>
 </html>
