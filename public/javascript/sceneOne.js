@@ -69,13 +69,19 @@ class sceneOne extends Phaser.Scene {
 
         this.intermissions = [
             {}
-        ]
+        ];
 
         this.questions = [
             "What are the benefits of owning a Home?",
             "What is a 'Safe Place'?",
             "What is Equity?"
-        ]
+        ];
+
+        this.explanations = [
+            "Lorem Ipsum",
+            "Ipsun Lorum",
+            "OOGA BOOGA"
+        ];
     }
 
     create() { //loads in the images and stuff for game
@@ -106,7 +112,7 @@ class sceneOne extends Phaser.Scene {
         this.loadCards;
 
         this.ScenerioText = this.make.text({ //One of the Scenario text for the 
-            x:105,
+            x:200,
             y:10,
             boundsAlignH: "center", 
             boundsAlignV: "middle",
@@ -162,7 +168,18 @@ class sceneOne extends Phaser.Scene {
 
             this.cardHolder = [
                 this.add.sprite(400,300,'explainBox'),
-                this.add.sprite(400,500,'button')
+                this.add.sprite(400,500,'button'),
+                this.make.text({ //timer text 
+                    x: 200,
+                    y:300,
+                    boundsAlignH: "center", 
+                    boundsAlignV: "middle",
+                    text: this.explanations[this.scenerio],
+                    style: {
+                        font: '38px monospace',
+                        fill: '#000000'
+                    }
+                })
             ]
 
             this.cardHolder[1].setInteractive().on('pointerhover', () => 
@@ -171,15 +188,18 @@ class sceneOne extends Phaser.Scene {
             }).on('pointerdown', () => {
                 this.cardHolder[0].destroy();
                 this.cardHolder[1].destroy();
+                this.cardHolder[2].destroy();
 
                 if(this.scenerio+1 > this.cards.length) {
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
                     this.gameOver();
                 } else {
 
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
 
                     this.cardHolder = this.cards[this.scenerio].map(cardData => {
                         this.add.sprite(cardData.x,cardData.y,cardData.name);
@@ -217,7 +237,18 @@ class sceneOne extends Phaser.Scene {
 
             this.cardHolder = [
                 this.add.sprite(400,300,'explainBox'),
-                this.add.sprite(400,500,'button')
+                this.add.sprite(400,500,'button'),
+                this.make.text({ //timer text 
+                    x: 200,
+                    y:300,
+                    boundsAlignH: "center", 
+                    boundsAlignV: "middle",
+                    text: this.explanations[this.scenerio],
+                    style: {
+                        font: '38px monospace',
+                        fill: '#000000'
+                    }
+                })
             ]
 
             this.cardHolder[1].setInteractive().on('pointerhover', () => 
@@ -227,11 +258,14 @@ class sceneOne extends Phaser.Scene {
                 if(this.scenerio+1 > this.cards.length) {
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
+                    
                     this.gameOver();
                 } else {
 
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
 
                     this.cardHolder = this.cards[this.scenerio].map(cardData => {
                         this.add.sprite(cardData.x,cardData.y,cardData.name);
@@ -271,7 +305,7 @@ class sceneOne extends Phaser.Scene {
                 boundsAlignV: "middle",
                 text: `Great! You got ${this.score} for your final score`,
                 style: {
-                    font: '20px monospace',
+                    font: '15px monospace',
                     fill: '#000000'
                 }
             });
@@ -328,6 +362,114 @@ class sceneOne extends Phaser.Scene {
         }
     }
     render() {
-        
+           
+    }
+
+    showQuestion(questionItem,imageQuestion) {
+        var questionTitleElement = this.addQuestionTitle(questionItem.question,imageQuestion);
+        this.addButtonsChoice(questionItem.choices,questionItem.answer,questionTitleElement);
+    }
+    addQuestionTitle (textContent,imageQuestion) {
+        var questionTitleElement = this.game.add.text(0,0,textContent, {
+            font: "24pt Audiowide", 
+            fill: "#000000", 
+            wordWrap: true,  
+            wordWrapWidth:800,
+            align: "left", 
+            backgroundColor: '#ffffff' 
+        });
+        questionTitleElement.alignTo(imageQuestion,Phaser.BOTTOM_CENTER);
+        return questionTitleElement;
+    }
+
+    addButtonsChoice (choicesText,answerIndex,questionTitleElement) {
+        var groupButtons = this.game.add.group();
+        var previousGroup;
+        for(var index=0;index<choicesText.length;index++){
+            var isRightAnswer = (index===answerIndex);
+            var group = this.addChoiceGroup(choicesText[index],isRightAnswer);
+            if(previousGroup){
+                group.alignTo(previousGroup, Phaser.BOTTOM_LEFT, 0);
+            }
+            previousGroup = group;
+            groupButtons.add(group);
+        }
+        groupButtons.alignTo(questionTitleElement, Phaser.BOTTOM_CENTER, 0);
+    }
+
+    addChoiceGroup (title,isRightAnswer){
+        var button = this.game.add.button(0,0, 'button', this.onButtonChoiceClicked, {context:this,isRightAnswer:isRightAnswer}, 2, 1, 0);
+        button.scale.set(0.5);
+        var text = this.game.add.text(0,0,title, {font: "12pt Audiowide", fill: "#000000", wordWrap: false,  align: "left", backgroundColor: '#ffffff' });
+        text.alignTo(button, Phaser.RIGHT_CENTER, 0);
+        var group = this.game.add.group();
+        group.add(button);
+        group.add(text);
+        return group;
+    }
+    onButtonChoiceClicked() {
+        var context = this.context;
+        if(this.isRightAnswer){
+            context.score++;            
+            context.marioWinSound.play();
+        }else{
+            context.marioLoseSound.play();
+            context.remainingLives--;
+        }
+        if(context.remainingLives>0){
+            context.game.state.start('answer',true,false,context.categoryIndexSelected,context.currentQuestionIndex,this.isRightAnswer,context.remainingLives,context.score);
+        }else{
+            var isWin = false
+            context.game.state.start('endgame',true,false,isWin);
+        }
+    }
+
+    listQuestionsByCategory (categoryIndex){
+        return this.data.categories[categoryIndex].questions;
+    }
+    
+    getQuestionItem (categoryIndex,questionIndex){
+        return this.listQuestionsByCategory(categoryIndex)[questionIndex];
+    }
+   showImageQuestion (categoryIndex,questionIndex){
+        var key = ['image_question',categoryIndex,questionIndex].join('_');
+        var image_question = this.game.add.image(0,0, key);
+        var scale = 1;
+        if(image_question.height > QuizGame.Constants.maxHeightImageQuestion){
+            scale = QuizGame.Constants.maxHeightImageQuestion/image_question.height;      
+        }
+        image_question.scale.set(scale);
+        image_question.alignIn(this.rectCanvas,Phaser.TOP_CENTER);
+        return image_question;
+    }
+
+    showLives (lives){
+        var group = this.game.add.group();
+        var previous;
+        for(var index=0;index<lives;index++){
+            var heart = this.game.add.sprite(0,0, 'heart');
+            if(previous){
+                heart.alignTo(previous, Phaser.RIGHT_CENTER, 0);
+            }
+            previous = heart;
+            group.add(heart);
+        }
+        group.alignIn(this.rectCanvas,Phaser.TOP_RIGHT)
+        return group;
+    }
+    showScore (score,total){
+        var style = { 
+            font: "20pt Audiowide", fill: "#7C00F8", wordWrap: false,  align: "right", backgroundColor: '#ffffff'
+        };
+        var textContent = 'Score : '+score+'/'+total;
+        var textEl = this.game.add.text(0,0,textContent, style);
+        textEl.alignTo(this.livesGroups,Phaser.BOTTOM_RIGHT);
+    }
+    showExitButton (){
+        var button = this.game.add.button(0,0, 'exitButton', this.onButtonExitClicked, this, 2, 1, 0);        
+        button.alignIn(this.rectCanvas,Phaser.BOTTOM_RIGHT);
+    }
+    onButtonChoiceClicked() {
+        this.game.state.start('intro');
     }
 }

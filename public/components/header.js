@@ -44,4 +44,39 @@
 
             </div>
     </nav>
+
+    <style>
+        :scope
+        #headerLogo {
+        display: table;
+        margin: auto;
+    }
+    h5 {
+        margin: 0;
+    }
+    .homeHeader {
+        height: auto;
+        background-color: rgba(0,0,0,0);
+    }
+    .header-Left, .header-Right {
+        margin-top: 30vh;
+    }
+
+    .floatRight {
+        text-align: right;
+    }
+
+    h5 {
+        color: #FF8AB4;
+        padding: 0.4vh;
+        border-bottom: 1px solid #77FFC6;
+    }
+
+    h5 {
+        transition: 1s color ease;
+    }
+    a:hover h5 {
+        color: #B3EDFF;
+    }
+    </style>
 </Main-Header>

@@ -2,19 +2,19 @@
 
     <div class="page-footer">
 
-            <div class="container footerContainer"> <!--Main Container it is in-->
+            <div class="container footerContainer">
                 
-                <div class="row footerRow verticalDivider"> <!--the general row it is in-->
+                <div class="row footerRow verticalDivider"> 
 
-                    <div class="col s12 m3 hide-on-small-only column"> <!--Column 1~Image-->
+                    <div class="col s12 m3 hide-on-small-only column"> 
 
-                        <img src="../assets/Logo_footer.png" alt="A flat illistrated rndom">
+                        <img src="../assets/Logo_footer.png" alt="A flat illistrated rndom" />
 
                     </div>
 
-                    <div class="col s12 m3 column"> <!--Column 2~Links-->
+                    <div class="col s12 m3 column"> 
 
-                        <div class="row footerRow"> <!--Level 1 of a inner Row-->
+                        <div class="row footerRow"> 
 
                             <div class="col s12 grey-text text-lighten-1 light">
                                 <h6 class="footerSubHeader">
@@ -24,7 +24,7 @@
 
                             <div class="col s12">
 
-                                <div class="row footerRow"> <!--Level 2 of a inner Row-->
+                                <div class="row footerRow"> 
 
                                     <a href="../html/newArticle.html" class="col s12 grey-text text-lighten-1 light footerContent">Corner Club</a>
                                     <a href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">Games</a>
@@ -39,9 +39,9 @@
 
                     </div>
 
-                    <div class="col s12 m3 column"> <!--Column 2~Links-->
+                    <div class="col s12 m3 column"> 
 
-                        <div class="row footerRow"> <!--Level 1 of a inner Row-->
+                        <div class="row footerRow"> 
 
                             <div class="col s12 grey-text text-lighten-1 light">
                                 <h6 class="footerSubHeader">
@@ -76,7 +76,7 @@
 
                     </div>
 
-                    <div class="col s12 m3 column center-align valign-wrapper"> <!--Column 3~Copyright-->
+                    <div class="col s12 m3 column center-align valign-wrapper">
                         <p class="grey-text lighten-1 bold copyright">© Copyright 2019 - The Unicorn Express - All Rights Reserved</p>
                     </div>
 
