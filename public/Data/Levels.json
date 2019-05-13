@@ -1,0 +1,40 @@
+{
+    "questions": [
+        {
+            "category": 1,
+            "question": "Which one of these is not a benefit of owning a home?",
+            "choices": [
+                "Pride of ownership",
+                "Pay less / save money",
+                "Peace of mind",
+                "Paying rent"
+            ],
+            "answer": 3,
+            "explanation": "OOGA BOOGA CHA, All the Others should be Blank!"
+        },
+        {
+            "category": 1,
+            "question": "Besides security and stability what is another beneficial reason to buy a home?",
+            "choices": [
+                "Appreciation",
+                "Parties",
+                "You look cool",
+                "Place to live"
+            ],
+            "answer": 3,
+            "explanation": "Neado Libido"
+        },
+        {
+            "category": 1,
+            "question": "What is the value of a homeowners interest in a home called?",
+            "choices": [
+                "Property Ownership",
+                "Security",
+                "Equity",
+                "Credit"
+            ],
+            "answer": 3,
+            "explanation": "Nice!"
+        }
+    ]
+}

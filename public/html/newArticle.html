@@ -139,10 +139,19 @@
         max-width: 512px;
         margin: 1rem auto;
     }
+
+    #game {
+        display: table;
+        height: 600px;
+        width: 800px;
+        margin: 1rem auto;
+        border : 1px solid black;
+    }
 </style>
 
 <body>
     <div id="root">
+        <p id="specialId" style="display:none;">1</p>
         <nav class=" nav-wrapper row z-depth-0 homeHeader"> <!--Navigation & Stuff-->
 
                 <div class="row">
@@ -210,7 +219,7 @@
                         </div>
 
                         <div class="cardName valign-wrapper">
-                            <h3 class="center-align" style="width:100%;">Your Future</h3>
+                            <h3 class="center-align" style="width:100%; color:#FCFCFC;" onclick="goToView('ownBenefits')">Your Future</h3>
                         </div>
                     
                     </div>
@@ -229,7 +238,7 @@
                                 </div>
 
                                 <div class="cardName valign-wrapper">
-                                    <h5 class="center-align" style="width:100%;">Benefits of Owning a Home</h5>
+                                    <h5 class="center-align" style="width:100%; color:#FCFCFC;" onclick="goToView('')">Benefits of Owning a Home</h5>
                                 </div>
 
                             </div>
@@ -245,7 +254,7 @@
                                 </div>
 
                                 <div class="cardName valign-wrapper">
-                                    <h5 class="center-align" style="width:100%;">Reasons to Buy a Home</h5>
+                                    <h5 class="center-align" style="width:100%; color:#FCFCFC;" onclick="goToView('')">Reasons to Buy a Home</h5>
                                 </div>
 
                             </div>
@@ -261,7 +270,7 @@
                                 </div>
 
                                 <div class="cardName valign-wrapper">
-                                    <h5 class="center-align" style="width:100%;">Building Security and Wealth</h5>
+                                    <h5 class="center-align" style="width:100%; color:#FCFCFC;" onclick="goToView('ownBenefits')">Building Security and Wealth</h5>
                                 </div>
 
                             </div>
@@ -412,6 +421,10 @@
 
                 </div>
 
+                <div id="game">
+
+                </div>
+
             </div>
 
             <div class="page-footer"> <!--Page Footer-->
@@ -499,6 +512,9 @@
                 </div>
 
         </div>
+
+    <script src="../Game/phaser.min.js"></script>
+    
     <script src="../resources/jquery.js"></script>
     <script src="../materialize/js/bin/materialize.min.js"></script>
     <script>
@@ -508,6 +524,14 @@
     </script>
     <script src="../resources/knockout-3.5.0.js"></script>
     <script src="../javascript/returnData.js"></script>
+
+    <!-- All The Game Stuff-->
+    <script src="../Game/Levels/Boot.js"></script>
+    <script src="../Game/Levels/Preload.js"></script>
+    <script src="../Game/Levels/Menu.js"></script>
+    <script src="../Game/Levels/Game.js"></script>
+
+    <script src="../Game/Main.js"></script>
 </body>
 
 
