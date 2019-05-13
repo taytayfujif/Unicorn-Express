@@ -69,13 +69,19 @@ class sceneOne extends Phaser.Scene {
 
         this.intermissions = [
             {}
-        ]
+        ];
 
         this.questions = [
             "What are the benefits of owning a Home?",
             "What is a 'Safe Place'?",
             "What is Equity?"
-        ]
+        ];
+
+        this.explanations = [
+            "Lorem Ipsum",
+            "Ipsun Lorum",
+            "OOGA BOOGA"
+        ];
     }
 
     create() { //loads in the images and stuff for game
@@ -106,7 +112,7 @@ class sceneOne extends Phaser.Scene {
         this.loadCards;
 
         this.ScenerioText = this.make.text({ //One of the Scenario text for the 
-            x:105,
+            x:200,
             y:10,
             boundsAlignH: "center", 
             boundsAlignV: "middle",
@@ -162,7 +168,18 @@ class sceneOne extends Phaser.Scene {
 
             this.cardHolder = [
                 this.add.sprite(400,300,'explainBox'),
-                this.add.sprite(400,500,'button')
+                this.add.sprite(400,500,'button'),
+                this.make.text({ //timer text 
+                    x: 200,
+                    y:300,
+                    boundsAlignH: "center", 
+                    boundsAlignV: "middle",
+                    text: this.explanations[this.scenerio],
+                    style: {
+                        font: '38px monospace',
+                        fill: '#000000'
+                    }
+                })
             ]
 
             this.cardHolder[1].setInteractive().on('pointerhover', () => 
@@ -171,15 +188,18 @@ class sceneOne extends Phaser.Scene {
             }).on('pointerdown', () => {
                 this.cardHolder[0].destroy();
                 this.cardHolder[1].destroy();
+                this.cardHolder[2].destroy();
 
                 if(this.scenerio+1 > this.cards.length) {
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
                     this.gameOver();
                 } else {
 
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
 
                     this.cardHolder = this.cards[this.scenerio].map(cardData => {
                         this.add.sprite(cardData.x,cardData.y,cardData.name);
@@ -217,7 +237,18 @@ class sceneOne extends Phaser.Scene {
 
             this.cardHolder = [
                 this.add.sprite(400,300,'explainBox'),
-                this.add.sprite(400,500,'button')
+                this.add.sprite(400,500,'button'),
+                this.make.text({ //timer text 
+                    x: 200,
+                    y:300,
+                    boundsAlignH: "center", 
+                    boundsAlignV: "middle",
+                    text: this.explanations[this.scenerio],
+                    style: {
+                        font: '38px monospace',
+                        fill: '#000000'
+                    }
+                })
             ]
 
             this.cardHolder[1].setInteractive().on('pointerhover', () => 
@@ -227,11 +258,14 @@ class sceneOne extends Phaser.Scene {
                 if(this.scenerio+1 > this.cards.length) {
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
+                    
                     this.gameOver();
                 } else {
 
                     this.cardHolder[0].destroy();
                     this.cardHolder[1].destroy();
+                    this.cardHolder[2].destroy();
 
                     this.cardHolder = this.cards[this.scenerio].map(cardData => {
                         this.add.sprite(cardData.x,cardData.y,cardData.name);
@@ -271,7 +305,7 @@ class sceneOne extends Phaser.Scene {
                 boundsAlignV: "middle",
                 text: `Great! You got ${this.score} for your final score`,
                 style: {
-                    font: '20px monospace',
+                    font: '15px monospace',
                     fill: '#000000'
                 }
             });
