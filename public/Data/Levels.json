@@ -73,7 +73,7 @@
             "explanation": "Nice!"
         },
         {
-            "category": 4,
+            "category": 2,
             "question": "In order to buy a house you need a good job and in order to get a job you need to go to college. What do you need to do to get?",
             "choices": [
                 "Get good grades",
@@ -85,7 +85,7 @@
             "explanation": "Nice!"
         },
         {
-            "category": 4,
+            "category": 2,
             "question": "In addition to a good job you will also need to?",
             "choices": [
                 "Travel",
@@ -97,13 +97,49 @@
             "explanation": "Nice!"
         },
         {
-            "category": 4,
+            "category": 2,
             "question": "Having bad credit will possibly prevent you from doing all these things except?",
             "choices": [
                 "Renting a place",
                 "Buying a car",
                 "Buying a house",
                 "Go to concerts"
+            ],
+            "answer": 3,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": "By staying in hawaii the communities will?",
+            "choices": [
+                "Stay local",
+                "Be bought by foreigners",
+                "Look cool",
+                "Be a community "
+            ],
+            "answer": 0,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": " When staying here you will be able to share ____ with your kids? ",
+            "choices": [
+                "The fish",
+                "Childhood traditions and memories",
+                "Houses",
+                "Childhood books"
+            ],
+            "answer": 1,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": "Benefits in Hawaii include all of these except?",
+            "choices": [
+                "Culturally diverse",
+                "Aloha Spirit",
+                "Beautiful scenery",
+                "Traffic"
             ],
             "answer": 3,
             "explanation": "Nice!"
