@@ -165,7 +165,7 @@ CardGame.Game = {
         const cardDisappear = this.game.add.tween(this.cardGroup);
 
         //explanation text
-        let explanation = this.game.add.text(this.game.world.centerX,this.game.world.height *0.95,this.cardQuestions[this.question].explanation,this.textStyle);
+        let explanation = this.game.add.text(this.game.world.centerX,this.game.world.centerY,this.cardQuestions[this.question].explanation,this.textStyle);
 
         explanation.anchor.setTo(0.5);
         explanation.alpha = 0;
@@ -216,7 +216,7 @@ CardGame.Game = {
         const cardDisappear = this.game.add.tween(this.cardGroup);
 
         //explanation text
-        let explanation = this.game.add.text(this.game.world.centerX,this.game.world.height * 0.95,this.cardQuestions[this.question].explanation,this.textStyle);
+        let explanation = this.game.add.text(this.game.world.centerX,this.game.world.centerY,this.cardQuestions[this.question].explanation,this.textStyle);
 
         explanation.anchor.setTo(0.5);
         explanation.alpha = 0;

@@ -21,7 +21,7 @@
                 "You look cool",
                 "Place to live"
             ],
-            "answer": 3,
+            "answer": 0,
             "explanation": "Neado Libido"
         },
         {
@@ -32,6 +32,78 @@
                 "Security",
                 "Equity",
                 "Credit"
+            ],
+            "answer": 2,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 3,
+            "question": "When researching for a house you should?",
+            "choices": [
+                "Start early",
+                "Go driving around",
+                "Do things last minute",
+                "Ask people"
+            ],
+            "answer": 0,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 3,
+            "question": "To actually get your house you need to make sure you get…",
+            "choices": [
+                "Qualified and sponsored ",
+                "Sponsored and approved",
+                "Qualified and approved",
+                "Sponsored and certified"
+            ],
+            "answer": 2,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 3,
+            "question": "Benefits of getting a real estate agent include all of these except",
+            "choices": [
+                "Know a lot about buying a home",
+                "Knows how to negotiate",
+                "Does not cost you anything",
+                "Helps your credit score"
+            ],
+            "answer": 3,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": "In order to buy a house you need a good job and in order to get a job you need to go to college. What do you need to do to get?",
+            "choices": [
+                "Get good grades",
+                "Party",
+                "Skip school",
+                "Cheat"
+            ],
+            "answer": 0,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": "In addition to a good job you will also need to?",
+            "choices": [
+                "Travel",
+                "Spend money",
+                "Save money",
+                "Give out money"
+            ],
+            "answer": 2,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": "Having bad credit will possibly prevent you from doing all these things except?",
+            "choices": [
+                "Renting a place",
+                "Buying a car",
+                "Buying a house",
+                "Go to concerts"
             ],
             "answer": 3,
             "explanation": "Nice!"
