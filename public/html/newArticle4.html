@@ -139,10 +139,18 @@
         max-width: 512px;
         margin: 1rem auto;
     }
+    #game {
+        display: table;
+        height: 600px;
+        width: 800px;
+        margin: 1rem auto;
+        border : 1px solid black;
+    }
 </style>
 
 <body>
     <div id="root">
+            <p id="specialId" style="display:none;">4</p>
         <nav class=" nav-wrapper row z-depth-0 homeHeader"> <!--Navigation & Stuff-->
 
                 <div class="row">
@@ -160,13 +168,11 @@
                         <div class="row contentRow">
 
             
-                            <div class="col m3 center-align headerContent">
+                            <div class="col m3 center-align headerContent hide-on-small-only">
                                 <a href="newArticle.html">
                                     <h4>Your Future</h4>
                                 </a>
-                                
                             </div>
-
                             <div class="col m3 center-align headerContent">
                                 <a href="newArticle2.html">
                                     <h4>Present Saving</h4>
@@ -181,11 +187,14 @@
                                 
                             </div>
 
-                            <div class="col m3 center-align headerContent hide-on-small-only">
-                                <a href="game.html">
-                                    <h4>Games</h4>
+                
+                            <div class="col m3 center-align headerContent">
+                                <a href="newArticle4.html">
+                                    <h4>Why Hawaii</h4>
                                 </a>
+                                
                             </div>
+
 
                         </div>
 
@@ -198,7 +207,7 @@
             <div class="row"> <!--First Row of Cards-->
 
                 <div class="col s12">
-                    <h4>Contents</h4>
+                    <h4>Why Hawaii</h4>
                 </div>
 
                 <div class="col s12 m6">
@@ -221,7 +230,7 @@
 
                     <div class="row">
                         <div class="col s12 m6">
-
+                            <a href= "#neigh">
                             <div class="card-panel small smallCard">
                                 
                                 <div class="card-image" style="height:100%;">
@@ -233,11 +242,11 @@
                                 </div>
 
                             </div>
-
+                            </a>
                         </div>
 
                         <div class="col s12 m6">
-
+                            <a href= "#family">
                             <div class="card-panel small smallCard">
                                 
                                 <div class="card-image" style="height:100%;">
@@ -249,11 +258,11 @@
                                 </div>
 
                             </div>
-
+                            </a>
                         </div>
 
                         <div class="col s12 m6">
-
+                            <a href= "#islands">
                             <div class="card-panel small smallCard">
                                 
                                 <div class="card-image" style="height:100%;">
@@ -265,11 +274,11 @@
                                 </div>
 
                             </div>
-
+                            </a>
                         </div>
 
                         <div class="col s12 m6">
-
+                            <a href= "#game">
                             <div class="card-panel small smallCard">
                                 
                                 <div class="card-image" style="height:100%;">
@@ -277,11 +286,11 @@
                                 </div>
 
                                 <div class="cardName valign-wrapper">
-                                    <h5 class="center-align" style="width:100%;">more</h5>
+                                    <h5 class="center-align" style="width:100%;">Game</h5>
                                 </div>
 
                             </div>
-
+                            </a>
                         </div>
 
 
@@ -323,7 +332,7 @@
                         <div class="row">
                             
                             <div class="col s12"> <!--Image Container for Cat-->
-                                <img src="../images/cat.jpg_large" class="headerImage" alt="A cat with glasses">
+                                <img src="../assets/neigh.png" id="neigh" class="headerImage" alt="A cat with glasses">
                             </div>
 
                             <div class="col s12">
@@ -355,7 +364,7 @@
                         <div class="row">
                             
                             <div class="col s12"> <!--Image Container for Cat-->
-                                <img src="../assets/Family.svg" class="headerImage" alt="A family">
+                                <img src="../assets/Family.svg" id="family" class="headerImage" alt="A family">
                             </div>
 
                             <div class="col s12">
@@ -381,7 +390,7 @@
                         <div class="row">
                             
                             <div class="col s12"> <!--Image Container for Cat-->
-                                <img src="../assets/Islands.svg" class="headerImage" alt="hawaiian islands">
+                                <img src="../assets/Islands.svg" id="islands" class="headerImage" alt="hawaiian islands">
                             </div>
 
                             <div class="col s12">
@@ -402,6 +411,10 @@
                             <p class="content grey-text text-lighten-2" data-bind= "text:obtainedData[11].b1"></p>
                         </div>  
                     </div>
+
+                </div>
+
+                <div id="game">
 
                 </div>
 
@@ -492,6 +505,7 @@
                 </div>
 
         </div>
+    <script src="../Game/phaser.min.js"></script>
     <script src="../resources/jquery.js"></script>
     <script src="../materialize/js/bin/materialize.min.js"></script>
     <script>
@@ -501,6 +515,13 @@
     </script>
     <script src="../resources/knockout-3.5.0.js"></script>
     <script src="../javascript/returnData.js"></script>
+
+    <script src="../Game/Levels/Boot.js"></script>
+    <script src="../Game/Levels/Preload.js"></script>
+    <script src="../Game/Levels/Menu.js"></script>
+    <script src="../Game/Levels/Game.js"></script>
+
+    <script src="../Game/Main.js"></script>
 </body>
 
 

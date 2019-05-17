@@ -1,0 +1,148 @@
+{
+    "questions": [
+        {
+            "category": 1,
+            "question": "Which one of these is not a benefit of owning a home?",
+            "choices": [
+                "Pride of ownership",
+                "Pay less / save money",
+                "Peace of mind",
+                "Paying rent"
+            ],
+            "answer": 3,
+            "explanation": "OOGA BOOGA CHA, All the Others should be Blank!"
+        },
+        {
+            "category": 1,
+            "question": "Besides security and stability what is another beneficial reason to buy a home?",
+            "choices": [
+                "Appreciation",
+                "Parties",
+                "You look cool",
+                "Place to live"
+            ],
+            "answer": 0,
+            "explanation": "Neado Libido"
+        },
+        {
+            "category": 1,
+            "question": "What is the value of a homeowners interest in a home called?",
+            "choices": [
+                "Property Ownership",
+                "Security",
+                "Equity",
+                "Credit"
+            ],
+            "answer": 2,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 3,
+            "question": "When researching for a house you should?",
+            "choices": [
+                "Start early",
+                "Go driving around",
+                "Do things last minute",
+                "Ask people"
+            ],
+            "answer": 0,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 3,
+            "question": "To actually get your house you need to make sure you get…",
+            "choices": [
+                "Qualified and sponsored ",
+                "Sponsored and approved",
+                "Qualified and approved",
+                "Sponsored and certified"
+            ],
+            "answer": 2,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 3,
+            "question": "Benefits of getting a real estate agent include all of these except",
+            "choices": [
+                "Know a lot about buying a home",
+                "Knows how to negotiate",
+                "Does not cost you anything",
+                "Helps your credit score"
+            ],
+            "answer": 3,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 2,
+            "question": "In order to buy a house you need a good job and in order to get a job you need to go to college. What do you need to do to get?",
+            "choices": [
+                "Get good grades",
+                "Party",
+                "Skip school",
+                "Cheat"
+            ],
+            "answer": 0,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 2,
+            "question": "In addition to a good job you will also need to?",
+            "choices": [
+                "Travel",
+                "Spend money",
+                "Save money",
+                "Give out money"
+            ],
+            "answer": 2,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 2,
+            "question": "Having bad credit will possibly prevent you from doing all these things except?",
+            "choices": [
+                "Renting a place",
+                "Buying a car",
+                "Buying a house",
+                "Go to concerts"
+            ],
+            "answer": 3,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": "By staying in hawaii the communities will?",
+            "choices": [
+                "Stay local",
+                "Be bought by foreigners",
+                "Look cool",
+                "Be a community "
+            ],
+            "answer": 0,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": " When staying here you will be able to share ____ with your kids? ",
+            "choices": [
+                "The fish",
+                "Childhood traditions and memories",
+                "Houses",
+                "Childhood books"
+            ],
+            "answer": 1,
+            "explanation": "Nice!"
+        },
+        {
+            "category": 4,
+            "question": "Benefits in Hawaii include all of these except?",
+            "choices": [
+                "Culturally diverse",
+                "Aloha Spirit",
+                "Beautiful scenery",
+                "Traffic"
+            ],
+            "answer": 3,
+            "explanation": "Nice!"
+        }
+    ]
+}
