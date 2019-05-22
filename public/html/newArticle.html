@@ -149,7 +149,17 @@
     }
     .parallax-container {
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 17rem;
+    }
+    .Auth-Text {
+        display: none;
+        position: absolute;
+        z-index: 0;
+        display: inline-flex;
+        color: #9792E3;
+        right: 28%;
+        top: 7%;
+        font-size: 1.352rem;
     }
 </style>
 
@@ -205,9 +215,11 @@
 
                     </div>
 
-                <div class="Auth-Text Sign-Out-Stuff">
+                <div class="Auth-Text Sign-Out-Stuff" style="display:none;">
                     <p id='Sign-In' onclick="ToggleSigns('#Signup-Overlay')">Sign In / Sign Up </p>
                 </div>
+
+                <p class='Sign-In-Stuff Auth-Text'> </p>
             
         </nav> <!--Navigation Bar End-->
 
@@ -525,6 +537,33 @@
                 </div>
 
         </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script> <!--Gets Authenication -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDdPKW1vnPtaU3l37v4d6AGqV0rKjqI9AI",
+        authDomain: "super-cool-project-fa38e.firebaseapp.com", 
+        databaseURL: "https://super-cool-project-fa38e.firebaseio.com",
+        projectId: "super-cool-project-fa38e",
+        // storageBucket: "super-cool-project-fa38e.appspot.com",
+        // messagingSenderId: "1068870192660"
+    };
+    firebase.initializeApp( config ); //initalizes connection to backend
+
+    //make auth & firestore ref.
+    const auth = firebase.auth( ); //authenication reference 
+    const dataBase = firebase.firestore( ); //database reference
+
+    //update firestore settings
+    //dataBase.settings( { timestampsInSnapshots: true } ) // so we don't get errors in console
+    </script>
+    <script src="../resources/jquery.js"></script>
+    <script src="../materialize/js/bin/materialize.min.js"></script>
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/auth2.js"></script>
 
     <script src="../Game/phaser.min.js"></script>
     

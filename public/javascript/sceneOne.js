@@ -156,7 +156,7 @@ class sceneOne extends Phaser.Scene {
                 score: obtainedScore
             }).then(() => {
                 console.log("low key it worked! Check the score");
-            })
+            });
         }
 
         this.success = () => {

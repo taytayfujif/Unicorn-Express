@@ -1,4 +1,4 @@
-var modal = document.querySelector('#Signup-Overlay');
+var modal = document.querySelector('#modal');
 
 const signupForm = document.querySelector("#Signup-Stuff"); //sign up element
 
@@ -51,6 +51,7 @@ signinForm.addEventListener('submit', e => {
     e.preventDefault();
 
     //get user info
+    console.log(signinForm);
     const email = signinForm["Email-Signin"].value;
     const password = signinForm["Password-Signin"].value;
 

@@ -67,6 +67,35 @@
         margin-left: 15vh;
         margin-right: 15vh;
     }
+    .grey-text:nth-child(even) {
+        width: 80%;
+        margin-left: auto;
+    }
+    .grey-text:nth-child(odd) {
+        width: 80%;
+        margin-right:auto;
+    }
+    .signStuff {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        top: 6%;
+        right: 5%;
+    }
+    .nav-wrapper {
+        position: relative;
+    }
+
+    .Auth-Text {
+        display: none;
+        position: absolute;
+        z-index: 0;
+        display: inline-flex;
+        color: #9792E3;
+        right: 1%;
+        top: -19%;
+        font-size: 1.352rem;
+    }
 </style>
 
 <body>
@@ -103,19 +132,22 @@
 
                     <div class="col m5">
                         <a href="newArticle3.html">
-                            <h5>Ownership</h5>
+                            <h5 style="text-align: right;">Ownership</h5>
                         </a>
                     </div>
         
                     <div class="col m5 offset-m2">
                         <a href="newArticle4.html">
-                            <h5 >Why Hawaii</h5>
+                            <h5 style="text-align: right;">Why Hawaii</h5>
                         </a>
                     </div>
         
                 </div>
 
             </div>
+
+            <a data-target="modal" class="signStuff btn purple modal-trigger z-depth-0 Sign-Out-Stuff"   data-target="#modal">Sign In/Sign Up</a>
+            <p class='Sign-In-Stuff Auth-Text'> </p>
         </nav>
 
         <div class="row">
@@ -206,42 +238,6 @@
             </div>
         </div>
 
-        <div class="row"> <!--Card Header-->
-                <div class="col s12 center-align">
-                    <h2 class="pink-text text-lighten-3">Games & Modules</h2>
-                </div>
-            </div>
-
-        <div class="container">
-            <div class="row">
-                <!--Card One-->
-                <div class="col s12 m5 offset-m1">
-                    <div class="card small">
-                        <div class="card-image">
-                            <img src="../images/Card_New/Card_Art_One.jpg" alt="A random image of something">
-                        </div>
-                        <span class="card-title">Lorem Ipsum</span>
-                        <div class="card-content">
-                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quis molestiae aspernatur iusto illo veniam eius ut, dignissimos corrupti nesciunt eum animi delectus quas dolores nobis, asperiores reiciendis, vel iste?</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!--Card Two-->
-                <div class="col s12 m5 ">
-                    <div class="card small">
-                        <div class="card-image">
-                            <img src="../images/Card_New/Card_Art_One.jpg" alt="A random image of something">
-                        </div>
-                        <span class="card-title">Lorem Ipsum</span>
-                        <div class="card-content">
-                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quis molestiae aspernatur iusto illo veniam eius ut, dignissimos corrupti nesciunt eum animi delectus quas dolores nobis, asperiores reiciendis, vel iste?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="page-footer">
 
             <div class="container footerContainer"> <!--Main Container it is in-->
@@ -326,9 +322,109 @@
             </div>
         </div>
 
+        <div id="modal" class="modal">
+            <div class="modal-content">
+
+                <div class="container">
+
+                    <div class="row column">
+
+                        <div class="col s12 m6"> <!--Sign In Side-->
+
+                            <form id="Signin-Stuff" class="row">
+
+                                <div class="col s12">
+                                    <h4>Sign In</h4>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input placeholder="Username" id="Email-Signin" type="text" class="validate">
+                                    <label for="first_name">Username</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input placeholder="password" id="Password-Signin" type="password" class="validate">
+                                    <label for="first_name">Password</label>
+                                </div>
+
+                                <button class="btn-small waves-effect z-depth-0 pink lighten-3">
+                                    <span>Sign In</span>
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                        <div class="col s12 m6"> <!--Sign In Side-->
+
+                            <form id="Signup-Stuff" class="row">
+
+                                <div class="col s12">
+                                    <h4>Sign Up</h4>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input placeholder="Username" id="first_name" type="text" class="validate">
+                                    <label for="first_name">Username</label>
+                                </div>
+
+                                <div class="input-field col s12">
+                                    <input placeholder="password" id="first_name" type="password" class="validate">
+                                    <label for="first_name">Password</label>
+                                </div>
+
+                                <button class="btn-small waves-effect z-depth-0 pink lighten-3">
+                                    <span>Sign Up</span>
+                                </button>
+
+                            </form>
+
+
+
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script> <!--Gets Authenication -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDdPKW1vnPtaU3l37v4d6AGqV0rKjqI9AI",
+        authDomain: "super-cool-project-fa38e.firebaseapp.com", 
+        databaseURL: "https://super-cool-project-fa38e.firebaseio.com",
+        projectId: "super-cool-project-fa38e",
+        // storageBucket: "super-cool-project-fa38e.appspot.com",
+        // messagingSenderId: "1068870192660"
+    };
+    firebase.initializeApp( config ); //initalizes connection to backend
+
+    //make auth & firestore ref.
+    const auth = firebase.auth( ); //authenication reference 
+    const dataBase = firebase.firestore( ); //database reference
+
+    //update firestore settings
+    //dataBase.settings( { timestampsInSnapshots: true } ) // so we don't get errors in console
+    </script>
     <script src="../resources/jquery.js"></script>
     <script src="../materialize/js/bin/materialize.min.js"></script>
+    <script src="../javascript/index.js"></script>
+    <script src="../javascript/auth.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#modal').modal();
+        });
+    </script>
     <script src="../resources/knockout-3.5.0.js"></script>
     <script src="../javascript//returnData.js"></script>
 </body>

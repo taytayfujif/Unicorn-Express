@@ -3,6 +3,13 @@ var CardGame = CardGame || {};
 CardGame.Game = {
     create: function() {
         //Phase 1: Sprites And There logic
+        this.sendData = function() { //sends and updates thee score when the game is over
+            dataBase.collection('users').doc(auth.currentUser.uid).update({
+                score: this.score
+            }).then(() => {
+                console.log("low key it worked! Check the score");
+            });
+        }
 
             //Dummy
         this.category = parseInt(document.querySelector('#specialId').innerHTML);
@@ -263,6 +270,8 @@ CardGame.Game = {
 
         var button = this.game.add.sprite(this.game.world.centerX,finalScore.bottom+50,'button');
         button.anchor.setTo(0.5);
+
+        this.sendData();
 
         button.inputEnabled = true;
         button.events.onInputDown.add(() => {
