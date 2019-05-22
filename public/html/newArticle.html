@@ -147,6 +147,10 @@
         margin: 1rem auto;
         border : 1px solid black;
     }
+    .parallax-container {
+        width: 100%;
+        margin-top: 2rem;
+    }
 </style>
 
 <body>
@@ -200,6 +204,10 @@
                         </div>
 
                     </div>
+
+                <div class="Auth-Text Sign-Out-Stuff">
+                    <p id='Sign-In' onclick="ToggleSigns('#Signup-Overlay')">Sign In / Sign Up </p>
+                </div>
             
         </nav> <!--Navigation Bar End-->
 
@@ -302,11 +310,13 @@
                     
 
                 </div>
-                <div>
+                
+                <div class="col s12">
                     <h1 class="mainHeader">Summary</h1>
                     <p class="content grey-text text-lighten-2" data-bind="text:obtainedData[0].summary"></p>
                 </div>
-                </div>
+                
+            </div>
 
             </div>
 
